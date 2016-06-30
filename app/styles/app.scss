@@ -1,0 +1,39 @@
+@import "settings";
+@import 'foundation';
+@include foundation-everything;
+
+@import 'variables';
+@import 'work';
+@import 'components/main-nav';
+
+body, html {
+	font-family: 'Gibson', sans-serif;
+	height: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: $gray-100;
+	text-decoration: none;
+	cursor: pointer;
+}
+.hidden {
+	opacity: 0;
+}
+body > .ember-view {
+    height: 100%;
+    overflow-y: auto;
+}
+.page {
+	margin-top: $header-height-large;
+}
+
+// Foundation overrides
+.row {
+    max-width: 2400px;
+    padding-left: 30px;
+    padding-right: 30px;
+}

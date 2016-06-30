@@ -1,0 +1,30 @@
+{{#each rows as |row|}}
+	{{#if row.isLeft}}
+		<div class="row">
+			<div class="medium-4 columns portfolio-item">
+				{{#link-to "project" row.projects.[0].id}}
+					{{portfolio-item project=row.projects.[0]}}
+				{{/link-to}}
+			</div>
+			<div class="medium-8 columns portfolio-item">
+				{{#link-to "project" row.projects.[1].id}}
+					{{portfolio-item project=row.projects.[1]}}
+				{{/link-to}}
+			</div>
+		</div>					
+	{{/if}}
+	{{#if row.isHalf}}
+		<div class="row">
+			<div class="medium-6 columns portfolio-item">
+				{{#link-to "project" row.projects.[0].id}}
+					{{portfolio-item project=row.projects.[0]}}
+				{{/link-to}}
+			</div>
+			<div class="medium-6 columns portfolio-item">
+				{{#link-to "project" row.projects.[1].id}}
+					{{portfolio-item project=row.projects.[1]}}
+				{{/link-to}}
+			</div>
+		</div>
+	{{/if}}
+{{/each}}

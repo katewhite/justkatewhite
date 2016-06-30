@@ -1,0 +1,19 @@
+<div class="header-container row">
+	<div class="header-logo medium-6 columns">
+		<img src="assets/images/KateWhite.jpg">
+	</div>
+	<div class="nav medium-6 columns">
+		<ul class="nav-list">
+			<li class="nav-item">
+				{{#link-to 'work' activeClass="active-nav"}}Work{{/link-to}}
+			</li>
+			<li class="nav-item">
+				{{#link-to 'about' activeClass="active-nav"}}About{{/link-to}}
+			</li>
+			<li class="nav-item">
+				{{#link-to 'contact' activeClass="active-nav"}}Contact{{/link-to}}
+			</li>
+		</ul>
+	</div>
+</div>
+{{yield}}

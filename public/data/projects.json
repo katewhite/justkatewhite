@@ -1,0 +1,35 @@
+{
+	"data": [{
+		"type": "project",
+		"id": "enigami",
+		"attributes": {
+			"name": "enigami",
+			"description": "Web Application | Responsive | Bootstrap | LESS",
+			"row-config": "left"
+		}
+	},{
+		"type": "project",
+		"id": "tapigo",
+		"attributes": {
+			"name": "tapigo",
+			"description": "Mobile Applications | Sencha Touch | SASS",
+			"row-config": "left"
+		}
+	},{
+		"type": "project",
+		"id": "spigot",
+		"attributes": {
+			"name": "spigot labs",
+			"description": "Web Application | Ember JS | SASS",
+			"row-config": "half"
+		}
+	},{
+		"type": "project",
+		"id": "dailyui",
+		"attributes": {
+			"name": "daily ui",
+			"description": "Photoshop | Sketch | Framer",
+			"row-config": "half"
+		}
+	}]
+}

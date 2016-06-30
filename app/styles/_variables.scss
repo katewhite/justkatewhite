@@ -1,0 +1,17 @@
+// Colors
+$yellow: #D9C02E;
+$dark-teal: #789AA1;
+$bright-teal: #B6D5D6;
+$muted-teal: #E4EBEC;
+$white: #f2f2f2;
+$gray-100: #304345;
+
+// Sizes
+$header-height-large: 116px;
+
+// Typography
+@mixin font-small() {
+  font-family: 'gibson', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
