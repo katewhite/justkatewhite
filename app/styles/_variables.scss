@@ -5,13 +5,55 @@ $bright-teal: #B6D5D6;
 $muted-teal: #E4EBEC;
 $white: #f2f2f2;
 $gray-100: #304345;
+$gray-70: lighten($gray-100, 30);
+$gray-50: lighten($gray-100, 50);
 
 // Sizes
 $header-height-large: 116px;
+$max-page-width: 2400px;
+$max-content-width: 900px;
 
 // Typography
-@mixin font-small() {
+@mixin font-body() {
+  font-family: 'cronos pro', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: $gray-100;
+}
+
+@mixin font-nav() {
   font-family: 'gibson', Arial, sans-serif;
   font-weight: 600;
   font-size: 16px;
+  text-transform: uppercase;
 }
+
+@mixin font-secondary-nav() {
+	font-size: 36px;
+    font-weight: 600;
+    color: $gray-50;
+}
+
+@mixin font-project-title() {
+  font-family: 'cronos pro', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 100px;
+  text-transform: capitalize;
+  color: $gray-100;
+}
+
+@mixin font-project-description() {
+  font-family: 'gibson', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $gray-100;
+}
+
+@mixin font-section-header() {
+  font-family: 'gibson', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $gray-100;
+}	

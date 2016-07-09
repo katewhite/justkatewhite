@@ -1,5 +1,17 @@
-PROJECT:
-{{model.name}}
-{{model.description}}
-{{secondary-nav projects=allProjects}}
-{{outlet}}
+{{#liquid-bind allProjects use="toDown" as |projects|}}
+	{{project-banner model=model}}
+	<div class="project-contents">
+		{{#each model.contents as |content|}}
+			{{#if content.isHeader}}
+				{{project-header model=content.content}}
+			{{/if}}
+			{{#if content.isBody}}
+				{{project-body model=content.content}}
+			{{/if}}
+			{{#if content.isImage}}
+				{{project-image model=content.content}}
+			{{/if}}
+		{{/each}}
+	</div>
+	{{secondary-nav model=projects}}
+{{/liquid-bind}}

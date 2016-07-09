@@ -5,7 +5,18 @@
 		"attributes": {
 			"name": "enigami",
 			"description": "Web Application | Responsive | Bootstrap | LESS",
-			"row-config": "left"
+			"row-config": "left",
+			"color": "bright-teal",
+			"thumbnail-image": "assets/images/thumbnail-spigot.png",
+			"banner-image": "assets/images/banner-spigot.png"
+		},
+		"relationships": {
+			"contents": {
+				"data": [
+					{ "type": "content", "id": "enigami-1" },
+					{ "type": "content", "id": "enigami-2" }
+				]
+			}
 		}
 	},{
 		"type": "project",
@@ -13,7 +24,18 @@
 		"attributes": {
 			"name": "tapigo",
 			"description": "Mobile Applications | Sencha Touch | SASS",
-			"row-config": "left"
+			"row-config": "left",
+			"color": "bright-teal",
+			"thumbnail-image": "assets/images/thumbnail-spigot.png",
+			"banner-image": "assets/images/banner-spigot.png"
+		},
+		"relationships": {
+			"contents": {
+				"data": [
+					{ "type": "content", "id": "tapigo-1" },
+					{ "type": "content", "id": "tapigo-2" }
+				]
+			}
 		}
 	},{
 		"type": "project",
@@ -21,7 +43,20 @@
 		"attributes": {
 			"name": "spigot labs",
 			"description": "Web Application | Ember JS | SASS",
-			"row-config": "half"
+			"row-config": "half",
+			"color": "bright-teal",
+			"thumbnail-image": "assets/images/thumbnail-spigot.png",
+			"banner-image": "assets/images/banner-spigot.png"
+		},
+		"relationships": {
+			"contents": {
+				"data": [
+					{ "type": "content", "id": "spigot-1" },
+					{ "type": "content", "id": "spigot-2" },
+					{ "type": "content", "id": "spigot-3" },
+					{ "type": "content", "id": "spigot-4" }
+				]
+			}
 		}
 	},{
 		"type": "project",
@@ -29,7 +64,67 @@
 		"attributes": {
 			"name": "daily ui",
 			"description": "Photoshop | Sketch | Framer",
-			"row-config": "half"
+			"row-config": "half",
+			"color": "bright-teal",
+			"thumbnail-image": "assets/images/thumbnail-spigot.png",
+			"banner-image": "assets/images/banner-spigot.png"
+		}
+	}],
+	"included": [{
+		"type": "content",
+		"id": "enigami-1",
+		"attributes": {
+			"content-type": "header",
+			"content": "Responsive Web Design"
+		}
+	},{
+		"type": "content",
+		"id": "enigami-2",
+		"attributes": {
+			"content-type": "header",
+			"content": "Challenge"
+		}
+	},{
+		"type": "content",
+		"id": "spigot-1",
+		"attributes": {
+			"content-type": "body",
+			"content": "Spigot Labs allows vendors and attendees of conferences and festivals to track who they met or what they tasted.  I designed and developed the front-end of the dashboard application."
+		}
+	},{
+		"type": "content",
+		"id": "spigot-2",
+		"attributes": {
+			"content-type": "header",
+			"content": "The Task"
+		}
+	},{
+		"type": "content",
+		"id": "spigot-3",
+		"attributes": {
+			"content-type": "body",
+			"content": "Kogi shabby chic seitan austin VHS, mlkshk +1. Biodiesel intelligentsia butcher selfies, narwhal organic craft beer listicle mumblecore actually roof party humblebrag. Everyday carry kinfolk before they sold out yuccie, vegan paleo pour-over portland. Semiotics brooklyn typewriter, pop-up seitan meditation chia celiac pork belly."
+		}
+	},{
+		"type": "content",
+		"id": "spigot-4",
+		"attributes": {
+			"content-type": "image",
+			"content": "/assets/images/banner-spigot.png"
+		}
+	},{
+		"type": "content",
+		"id": "tapigo-1",
+		"attributes": {
+			"content-type": "header",
+			"content": "Visual Design"
+		}
+	},{
+		"type": "content",
+		"id": "tapigo-2",
+		"attributes": {
+			"content-type": "header",
+			"content": "Mobile Applications"
 		}
 	}]
 }

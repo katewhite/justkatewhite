@@ -1,17 +1,20 @@
 
 .main-banner {
-	height: calc(100vh - #{$header-height-large});
+	height: 500px;
+	min-height: 600px;
 	width: 100%;
-	background-image: url("/assets/images/kate_daily_tools.jpg");
-	background-size: cover;
-	background-position: center top;
+	// background-image: url("/assets/images/bigstock-Abstract-weathered-texture-sta-67677673.jpg");
+	// background-size: cover;
+	// background-position: center center;
 	position: relative;
+	// background-color: white;
+	margin-top: -5px;
 }
 .banner-overlay {
 	height: 100%;
 	width: 100%;
-	background-color: $gray-100;
-	opacity: .6;
+	background-color: white;
+	opacity: .9;
 	position: absolute;
 }
 .headline-wrapper {
@@ -19,6 +22,9 @@
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	text-align: center;
+	font-weight: 600;
+	margin-top: 50px;
 }
 .headline-text {
 	margin-top: 5px;
@@ -42,12 +48,16 @@ div[class^="large"] {
 }
 .headline-text-large {
 	font-size: 80px;
-	font-weight: 100;
-	color: white;
+	font-weight: 600;
+	color: $gray-100;
 	.ampersand {
-		font-size: 150px;
+		font-size: 360px;
 		color: $yellow;
 		vertical-align: middle;
+		margin-left: -90px;
+		margin-right: -150px;
+		position: relative;
+		z-index: -10;
 	}
 }
 
@@ -58,7 +68,7 @@ div[class^="large"] {
 	text-align: center;
 }
 .work {
-	padding: 50px;
+	padding: 0px 50px 50px 50px;
 }
 .portfolio-item {
 	height: 550px;
@@ -86,7 +96,6 @@ div[class^="large"] {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    color: $white;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.50);
     .project-name {
@@ -94,9 +103,11 @@ div[class^="large"] {
 		font-size: 2.5em;
 		font-family: 'Cronos Pro';
 		margin-bottom: 5px;
+		color: $white;
     }
     .project-description {
 		text-transform: uppercase;
+		color: $white;
     }
 }
 .image-placeholder{

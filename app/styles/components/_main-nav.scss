@@ -1,17 +1,32 @@
 .header-container {
-    position: fixed;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	height: $header-height-large;
     width: 100%;
-    z-index: 999;
-    background-color: white;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.30);
+    z-index: 9999;
+    position: absolute;
+    //background-color: white;
 }
 .header-logo {
 	line-height: 50px;
 	img {
 		max-height: 50px;
+	}
+	.kate-white, .design-development {
+	    font-family: gibson;
+	    text-transform: lowercase;
+	}
+	.kate-white {
+		font-weight: 600;
+		font-size: 36px;
+	    line-height: 36px;
+	    color: $gray-100;
+	}
+	.design-development {
+		font-weight: 500;
+		font-size: 18px;
+	    line-height: 18px;
+	    color: $gray-50;
 	}
 }
 .nav-list {
@@ -20,8 +35,7 @@
 .nav-item {
 	display: inline-block;
 	margin-left: 50px;
-	text-transform: uppercase;
-	@include font-small();
+	@include font-nav();
 }
 .nav-item {
 	a {

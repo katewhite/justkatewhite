@@ -1,6 +1,5 @@
-{{#each projects as |project|}}
-	{{#link-to "project" project.id}}
-		{{project.name}}
+{{#each model as |currentProject|}}
+	{{#link-to "project" currentProject.id}}
+		{{currentProject.name}}
 	{{/link-to}}
 {{/each}}
-{{yield}}

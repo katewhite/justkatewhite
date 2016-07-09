@@ -4,7 +4,12 @@
 
 @import 'variables';
 @import 'work';
+@import 'project';
+@import 'components/loading-overlay';
 @import 'components/main-nav';
+@import 'components/secondary-nav';
+@import 'components/project-banner';
+@import 'components/project-header';
 
 body, html {
 	font-family: 'Gibson', sans-serif;
@@ -23,17 +28,27 @@ a {
 .hidden {
 	opacity: 0;
 }
+.loading-overlay {
+	opacity: 1;
+	transition: all .7s ease;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+}
+.loading-overlay.hidden {
+	opacity: 0;
+	transition: all .7s ease;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    z-index: -999;
+}
 body > .ember-view {
     height: 100%;
     overflow-y: auto;
 }
-.page {
-	margin-top: $header-height-large;
-}
 
 // Foundation overrides
 .row {
-    max-width: 2400px;
+    max-width: $max-page-width;
     padding-left: 30px;
     padding-right: 30px;
 }
