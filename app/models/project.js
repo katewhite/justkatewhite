@@ -4,9 +4,9 @@ import { belongsTo, hasMany } from 'ember-data/relationships';
 
 export default Model.extend({
 	name: attr(),
+	thumbnailSubtitle: attr(),
 	description: attr(),
-	rowConfig: attr(),
-	color: attr(),
+	subtitle: attr(),
 	thumbnailImage: attr(),
 	bannerImage: attr(),
 	contents: hasMany('content')

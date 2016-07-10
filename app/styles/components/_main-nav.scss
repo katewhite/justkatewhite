@@ -1,32 +1,32 @@
-.header-container {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	height: $header-height-large;
+.header-container.row {
+	padding-top: 20px;
+	padding-bottom: 20px;
     width: 100%;
     z-index: 9999;
     position: absolute;
-    //background-color: white;
+    background-color: rgba(255,255,255,.9);
+    margin-left: calc(0px - #{$body-padding});
+    margin-right: $body-padding;
+    padding-left: $body-padding;
+    padding-right: $body-padding;
+    max-width: none;
 }
 .header-logo {
 	line-height: 50px;
 	img {
-		max-height: 50px;
-	}
-	.kate-white, .design-development {
-	    font-family: gibson;
-	    text-transform: lowercase;
+		max-height: 40px;
+		display: inline-block;
 	}
 	.kate-white {
+		font-family: gibson;
+	    text-transform: lowercase;
 		font-weight: 600;
-		font-size: 36px;
-	    line-height: 36px;
+		font-size: 26px;
+	    line-height: 50px;
 	    color: $gray-100;
-	}
-	.design-development {
-		font-weight: 500;
-		font-size: 18px;
-	    line-height: 18px;
-	    color: $gray-50;
+	    display: inline-block;
+	    margin-left: 15px;
+	    vertical-align: middle;
 	}
 }
 .nav-list {
@@ -49,9 +49,6 @@
 		}
 	}
 	.active-nav {
-		color: $yellow;
-		&:hover {
-			border-bottom: 3px solid $yellow;
-		}
+		border-bottom: 3px solid $gray-100;
 	}
 }

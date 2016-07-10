@@ -10,12 +10,12 @@
 @import 'components/secondary-nav';
 @import 'components/project-banner';
 @import 'components/project-header';
+@import 'components/portfolio-item';
 
 body, html {
 	font-family: 'Gibson', sans-serif;
 	height: 100%;
 }
-
 li {
 	list-style: none;
 }
@@ -24,6 +24,13 @@ a {
 	color: $gray-100;
 	text-decoration: none;
 	cursor: pointer;
+}
+section {
+	padding-left: $body-padding;
+	padding-right: $body-padding;
+}
+section.content-section {
+	border-bottom: 1px solid $gray-50;
 }
 .hidden {
 	opacity: 0;
@@ -48,7 +55,11 @@ body > .ember-view {
 
 // Foundation overrides
 .row {
-    max-width: $max-page-width;
-    padding-left: 30px;
-    padding-right: 30px;
+	margin-left: 0px;
+	margin-right: 0px;
+    max-width: none;
+}
+.columns {
+	padding-left: 0px;
+	padding-right: 0px;
 }

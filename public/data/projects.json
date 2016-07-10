@@ -4,10 +4,10 @@
 		"id": "enigami",
 		"attributes": {
 			"name": "enigami",
-			"description": "Web Application | Responsive | Bootstrap | LESS",
-			"row-config": "left",
-			"color": "bright-teal",
-			"thumbnail-image": "assets/images/thumbnail-spigot.png",
+			"thumbnail-subtitle": "Responsive Web Application",
+			"description": "Web application designed for quick data entry for tracking symptoms based on a given condition.",
+			"subtitle":  "Web Application • Responsive • Bootstrap • LESS",
+			"thumbnail-image": "assets/images/Enigami-iPad.jpg",
 			"banner-image": "assets/images/banner-spigot.png"
 		},
 		"relationships": {
@@ -20,32 +20,13 @@
 		}
 	},{
 		"type": "project",
-		"id": "tapigo",
-		"attributes": {
-			"name": "tapigo",
-			"description": "Mobile Applications | Sencha Touch | SASS",
-			"row-config": "left",
-			"color": "bright-teal",
-			"thumbnail-image": "assets/images/thumbnail-spigot.png",
-			"banner-image": "assets/images/banner-spigot.png"
-		},
-		"relationships": {
-			"contents": {
-				"data": [
-					{ "type": "content", "id": "tapigo-1" },
-					{ "type": "content", "id": "tapigo-2" }
-				]
-			}
-		}
-	},{
-		"type": "project",
 		"id": "spigot",
 		"attributes": {
 			"name": "spigot labs",
-			"description": "Web Application | Ember JS | SASS",
-			"row-config": "half",
-			"color": "bright-teal",
-			"thumbnail-image": "assets/images/thumbnail-spigot.png",
+			"thumbnail-subtitle": "Ember Web Application",
+			"description": "Spigot Labs allows vendors and attendees of conferences and festivals to track who they met or what they tasted.",
+			"subtitle":  "Web Application • Ember JS • SASS",
+			"thumbnail-image": "assets/images/spigot-macbook.jpg",
 			"banner-image": "assets/images/banner-spigot.png"
 		},
 		"relationships": {
@@ -60,13 +41,32 @@
 		}
 	},{
 		"type": "project",
-		"id": "dailyui",
+		"id": "tapigo",
 		"attributes": {
-			"name": "daily ui",
-			"description": "Photoshop | Sketch | Framer",
-			"row-config": "half",
-			"color": "bright-teal",
-			"thumbnail-image": "assets/images/thumbnail-spigot.png",
+			"name": "tapigo",
+			"thumbnail-subtitle": "Mobile Applications",
+			"description": "Suite of mobile applications specifically designed for the residential and commercial irrigation maintenance process.",
+			"subtitle":  "Mobile Applications • Sencha Touch • SASS",
+			"thumbnail-image": "assets/images/Tapigo-Phones.jpg",
+			"banner-image": "assets/images/banner-spigot.png"
+		},
+		"relationships": {
+			"contents": {
+				"data": [
+					{ "type": "content", "id": "tapigo-1" },
+					{ "type": "content", "id": "tapigo-2" }
+				]
+			}
+		}
+	},{
+		"type": "project",
+		"id": "aventura",
+		"attributes": {
+			"name": "aventura",
+			"thumbnail-subtitle": "Desktop Security Application",
+			"description": "Aventura leverages situational awareness to deliver a highly secure, personalized clinical desktop with single sign on technology.",
+			"subtitle":  "Photoshop • Sketch • Framer",
+			"thumbnail-image": "assets/images/aventura-imac.jpg",
 			"banner-image": "assets/images/banner-spigot.png"
 		}
 	}],

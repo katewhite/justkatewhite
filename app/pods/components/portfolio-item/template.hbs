@@ -1,9 +1,18 @@
-
-<div class="portfolio-item-overlay {{if overlayVisible '' 'hidden'}}">
-	<div class="project-description-container">
-		<div class="project-name">{{project.name}}</div>
-		<div class="project-description">{{project.description}}</div>
+<section class=content-section>
+	<div class="row">
+		<div class="columns medium-5 portfolio-item-text-container">
+			<div class="portfolio-item-title">{{model.name}}</div>
+			<div class="portfolio-item-subtitle">{{model.thumbnailSubtitle}}</div>
+			<div class="portfolio-item-description">{{model.description}}</div>
+			<div class="view-link">
+				{{#link-to "project" model.id}}
+					<span>view</span>
+					{{svg-arrow}}
+				{{/link-to}}
+			</div>
+		</div>
+		<div class="columns medium-7 portfolio-item-image-container">
+			<img class="{{model.name}}" src="{{model.thumbnailImage}}">
+		</div>
 	</div>
-</div>
-<div class="{{project.name}} image-placeholder"></div>
-
+</section>

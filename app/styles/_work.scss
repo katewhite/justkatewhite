@@ -1,13 +1,8 @@
-
 .main-banner {
 	height: 500px;
 	min-height: 600px;
 	width: 100%;
-	// background-image: url("/assets/images/bigstock-Abstract-weathered-texture-sta-67677673.jpg");
-	// background-size: cover;
-	// background-position: center center;
 	position: relative;
-	// background-color: white;
 	margin-top: -5px;
 }
 .banner-overlay {
@@ -27,102 +22,17 @@
 	margin-top: 50px;
 }
 .headline-text {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	text-shadow: 2px 2px 4px rgba(0,0,0,0.50);
-	.headline-text-large {
-		text-align: center;
-	}
-}
-div[class^="large"] {
-	.headline-text:first-child {
-		.headline-text-large {
-			text-align: right;
-		}
-	}
-	.headline-text:nth-child(2) {
-		.headline-text-large {
-			text-align: left;
-		}
-	}
-}
-.headline-text-large {
-	font-size: 80px;
-	font-weight: 600;
-	color: $gray-100;
-	.ampersand {
-		font-size: 360px;
-		color: $yellow;
-		vertical-align: middle;
-		margin-left: -90px;
-		margin-right: -150px;
-		position: relative;
-		z-index: -10;
-	}
+	@include font-title();
+	text-transform: lowercase;
+	text-align: left;
 }
 
-.headline-text-small {
-	font-size: 40px;
-	font-weight: 100;
-	color: white;
-	text-align: center;
-}
-.work {
-	padding: 0px 50px 50px 50px;
-}
-.portfolio-item {
-	height: 550px;
-	padding: 50px;
-	overflow: hidden;
-	position: relative;
-}
-.portfolio-item > .ember-view {
-	position: relative;
-	display: block;
-}
-.portfolio-item-overlay {
-	position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba($black, .5);
-    transition: all .6s ease;
-    -webkit-transition: all .6s ease;
-    -moz-transition: all .6s ease;
-    cursor: pointer;
-}
-.project-description-container {
-	margin: 0 auto;
-    display: table;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.50);
-    .project-name {
-		text-transform: capitalize;
-		font-size: 2.5em;
-		font-family: 'Cronos Pro';
-		margin-bottom: 5px;
-		color: $white;
-    }
-    .project-description {
-		text-transform: uppercase;
-		color: $white;
-    }
-}
-.image-placeholder{
-	height: 500px;
-	width: 100%;
-}
-.enigami {
-	background-color: $gray-100;
-}
-.tapigo {
-	background-color: $dark-teal;
-}
-.spigot {
-	background-color: $bright-teal;
-}
-.daily {
-	background-color: $muted-teal;
+// Project list
+.project-thumbnails {
+	section.content-section {
+		padding-top: 100px;
+		padding-bottom: 130px;
+		max-height: 700px;
+    	overflow: hidden;
+	}
 }
