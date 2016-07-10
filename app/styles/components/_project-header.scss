@@ -1,0 +1,19 @@
+.project-header {
+	text-align: center;
+}
+.section-title {
+	@include font-section-header();
+	background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.divider-line {
+	margin-top: -20px;
+	margin-left: -50px;
+    margin-right: -50px;
+	height: 2px;
+	background-image: linear-gradient(to right, #304345 20%, rgba(255, 255, 255, 0) 0%);
+	background-position: top;
+	background-size: 8px 2px;
+	background-repeat: repeat-x;
+}

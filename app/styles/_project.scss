@@ -1,0 +1,14 @@
+.project-contents {
+	margin: 75px auto;
+	max-width: $max-content-width;
+	@include font-body();
+}
+.project-image {
+	margin-bottom: 100px;
+	margin-top: 50px;
+	text-align: center;	
+}
+.project-header {
+	margin-top: 75px;
+	margin-bottom: 40px;
+}

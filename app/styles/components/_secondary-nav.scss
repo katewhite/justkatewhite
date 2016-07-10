@@ -1,0 +1,15 @@
+.secondary-nav {
+	margin: 50px;
+	text-align: center;
+	a {
+		margin-left: 50px;
+		margin-right: 50px;
+		@include font-secondary-nav();
+		transition: all .4s ease;
+	    -webkit-transition: all .4s ease;
+	    -moz-transition: all .4s ease;
+		&:hover {
+			color: $gray-100;
+		}
+	}
+}
