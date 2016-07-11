@@ -1,0 +1,18 @@
+.contact {
+	height: 100vh;
+	display: table;
+}
+.contact-container {
+	display: table-cell;
+	vertical-align: middle;
+	h1 {
+		text-transform: lowercase;
+		margin-bottom: 30px;
+	    margin-left: -5px;
+	}
+	.social-container {
+		a:first-child {
+			margin-left: 0px;
+		}
+	}
+}

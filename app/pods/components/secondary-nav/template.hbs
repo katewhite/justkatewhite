@@ -1,5 +1,8 @@
 {{#each model as |currentProject|}}
-	{{#link-to "project" currentProject.id}}
-		{{currentProject.name}}
-	{{/link-to}}
+	<div class="secondary-nav-item-container">
+		{{#link-to "project" currentProject.id}}
+			{{currentProject.name}}
+			{{svg-arrow}}
+		{{/link-to}}
+	</div>
 {{/each}}

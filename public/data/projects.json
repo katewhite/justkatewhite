@@ -6,9 +6,9 @@
 			"name": "enigami",
 			"thumbnail-subtitle": "Responsive Web Application",
 			"description": "Web application designed for quick data entry for tracking symptoms based on a given condition.",
-			"subtitle":  "Web Application • Responsive • Bootstrap • LESS",
-			"thumbnail-image": "assets/images/Enigami-iPad.jpg",
-			"banner-image": "assets/images/banner-spigot.png"
+			"subtitle":  "Responsive Design • Development • Bootstrap • LESS",
+			"thumbnail-image": "assets/images/enigami-ipad.jpg",
+			"banner-image": "assets/images/enigamilogo-gray.png"
 		},
 		"relationships": {
 			"contents": {
@@ -25,9 +25,9 @@
 			"name": "spigot labs",
 			"thumbnail-subtitle": "Ember Web Application",
 			"description": "Spigot Labs allows vendors and attendees of conferences and festivals to track who they met or what they tasted.",
-			"subtitle":  "Web Application • Ember JS • SASS",
+			"subtitle":  "Design • Development • Ember JS • SASS",
 			"thumbnail-image": "assets/images/spigot-macbook.jpg",
-			"banner-image": "assets/images/banner-spigot.png"
+			"banner-image": "assets/images/spigotlogo-gray.png"
 		},
 		"relationships": {
 			"contents": {
@@ -47,8 +47,8 @@
 			"thumbnail-subtitle": "Mobile Applications",
 			"description": "Suite of mobile applications specifically designed for the residential and commercial irrigation maintenance process.",
 			"subtitle":  "Mobile Applications • Sencha Touch • SASS",
-			"thumbnail-image": "assets/images/Tapigo-Phones.jpg",
-			"banner-image": "assets/images/banner-spigot.png"
+			"thumbnail-image": "assets/images/tapigo-phones.jpg",
+			"banner-image": "assets/images/tapigologo-gray.png"
 		},
 		"relationships": {
 			"contents": {
@@ -65,9 +65,9 @@
 			"name": "aventura",
 			"thumbnail-subtitle": "Desktop Security Application",
 			"description": "Aventura leverages situational awareness to deliver a highly secure, personalized clinical desktop with single sign on technology.",
-			"subtitle":  "Photoshop • Sketch • Framer",
+			"subtitle":  "Design • Development • Desktop Application • QML",
 			"thumbnail-image": "assets/images/aventura-imac.jpg",
-			"banner-image": "assets/images/banner-spigot.png"
+			"banner-image": "assets/images/aventuralogo-gray.png"
 		}
 	}],
 	"included": [{

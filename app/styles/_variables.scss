@@ -14,49 +14,62 @@ $body-padding: 100px;
 $max-page-width: 2400px;
 $max-content-width: 900px;
 
+// Font Sizes
+$font-small: 1em; //16px
+$font-medium: 1.5em; //24px
+$font-medium-large: 2.25em; //36px
+$font-large: 5.063em; //81px
+$font-extra-large: 7.594em; //121.5px
+
 // Typography
 @mixin font-title() {
   font-weight: 100;
-  font-size: 100px;
+  font-size: $font-extra-large;
   text-transform: capitalize;
   color: $gray-100;
 }
 @mixin font-subtitle() {
   font-weight: 100;
-  font-size: 36px;
+  font-size: $font-medium-large;
   text-transform: capitalize;
   color: $gray-100;
 }
 
 @mixin font-body() {
   font-weight: 100;
-  font-size: 24px;
+  font-size: $font-medium;
   line-height: 34px;
   color: $gray-70;
 }
 
 @mixin font-nav() {
   font-weight: 600;
-  font-size: 16px;
+  font-size: $font-small;
   text-transform: uppercase;
 }
 
 @mixin font-secondary-nav() {
-	font-size: 36px;
+	font-size: $font-large;
     font-weight: 600;
-    color: $gray-50;
+    color: $gray-70;
 }
 @mixin font-project-description() {
   font-weight: 500;
-  font-size: 16px;
+  font-size: $font-small;
   text-transform: capitalize;
   color: $gray-100;
 }
 
 @mixin font-section-header() {
-  font-family: 'gibson', Arial, sans-serif;
   font-weight: 600;
-  font-size: 24px;
+  font-size: $font-medium;
   text-transform: uppercase;
   color: $gray-100;
 }	
+
+@mixin callout-text() {
+  font-weight: 600;
+  font-size: $font-medium-large;
+  text-transform: uppercase;
+  color: $yellow;
+} 

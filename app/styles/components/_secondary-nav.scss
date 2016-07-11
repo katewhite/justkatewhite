@@ -1,15 +1,44 @@
 .secondary-nav {
 	margin: 50px;
 	text-align: center;
+	border-top: 1px solid $gray-50;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    padding: 60px;
+	.secondary-nav-item-container {
+	    margin-top: 30px;
+	    margin-bottom: 30px;
+	}
 	a {
-		margin-left: 50px;
-		margin-right: 50px;
+		vertical-align: middle;
 		@include font-secondary-nav();
+		text-transform: capitalize;
 		transition: all .4s ease;
 	    -webkit-transition: all .4s ease;
 	    -moz-transition: all .4s ease;
 		&:hover {
-			color: $gray-100;
+			color: lighten($gray-70, 20);
+			#PortfolioItem {
+				stroke: lighten($yellow, 20);
+			}
 		}
+	}
+	.svg-arrow {
+		display: inline-block;
+	    vertical-align: middle;
+	    margin-top: -20px;
+	}
+	svg {
+		width: 130px;
+    	height: 40px;
+	}
+	#PortfolioItem {
+		stroke: $yellow;
+		transition: all .4s ease;
+	    -webkit-transition: all .4s ease;
+	    -moz-transition: all .4s ease;
+		stroke-width: 1px;
 	}
 }

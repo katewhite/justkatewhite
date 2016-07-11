@@ -5,21 +5,42 @@
 @import 'variables';
 @import 'work';
 @import 'project';
+@import 'about';
+@import 'contact';
 @import 'components/loading-overlay';
 @import 'components/main-nav';
 @import 'components/secondary-nav';
 @import 'components/project-banner';
 @import 'components/project-header';
 @import 'components/portfolio-item';
+@import 'components/site-footer';
 
-body, html {
+html, body {
 	font-family: 'Gibson', sans-serif;
+	color: $gray-100;
 	height: 100%;
+}
+// html {
+//     overflow: hidden;
+// }
+// body {
+//     overflow: auto;
+// }
+h1, h2, h3 {
+	margin: 0px;
+}
+h1 {
+	@include font-title();
+}
+h2 {
+	@include font-subtitle();
+}
+h3 {
+	@include font-section-header();
 }
 li {
 	list-style: none;
 }
-
 a {
 	color: $gray-100;
 	text-decoration: none;
@@ -31,6 +52,21 @@ section {
 }
 section.content-section {
 	border-bottom: 1px solid $gray-50;
+	padding-top: 100px;
+	padding-bottom: 130px;
+	max-height: 700px;
+	.row {
+		position: relative;
+	}
+	.centered {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+section.content-section.banner {
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 .hidden {
 	opacity: 0;
@@ -51,6 +87,9 @@ section.content-section {
 body > .ember-view {
     height: 100%;
     overflow-y: auto;
+}
+.small-title {
+    margin-bottom: 40px;
 }
 
 // Foundation overrides

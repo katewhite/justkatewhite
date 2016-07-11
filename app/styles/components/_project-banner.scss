@@ -1,34 +1,31 @@
 .project-banner {
-	padding: 40px;
-	text-align: center;
-	height: calc(100vh - #{$header-height-large}*2.5);
-	min-height: 600px;
+	background-image: none;
+	overflow: hidden;
 	.row {
 		height: 100%;
 	}
 }
-.project-banner.bright-teal {
-	background-color: $bright-teal;
+.banner-title-container {
+	margin-top: 280px;
 }
-.banner-image, .banner-title-container {
-	height: 100%;
-}
-.banner-image img {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    height: auto;
-    width: auto;
+.banner-image {
+	margin-top: 240px;
+	text-align: center;
 }
 
-.banner-title {
-	position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+// Project Specific
+.project-banner.tapigo {
+	img {
+		max-width: 65%;
+	}
 }
-.project-name {
-	@include font-title();
+.project-banner.enigami, .project-banner.tapigo {
+	.banner-image {
+		margin-top: 220px;
+	}
 }
-.project-description {
-	@include font-project-description();
+.project-banner.aventura {
+	.banner-image {
+		margin-top: 170px;
+	}
 }

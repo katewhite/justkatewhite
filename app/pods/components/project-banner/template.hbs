@@ -1,17 +1,19 @@
-<div class="project-banner {{model.color}}">
-	<div class="row">
-		<div class="banner-image columns medium-8">
-			<img class="load-image" src={{model.bannerImage}}>
-		</div>
-		<div class="banner-title-container columns medium-4">
-			<div class="banner-title">
-				<div class="project-name to-animate fadeInDown">
-					{{model.name}}
+<section class="content-section banner">
+	<div class="project-banner {{model.name}}">
+		<div class="row">
+			<div class="banner-title-container columns medium-7">
+				<div class="banner-title">
+					<h1 class="project-name to-animate fadeInDown">
+						{{model.name}}
+					</h1>
+					<h2 class="project-subtitle">
+						{{model.subtitle}}
+					</h2>
 				</div>
-				<div class="project-description">
-					{{model.description}}
-				</div>
+			</div>
+			<div class="banner-image columns medium-5">
+				<img class="load-image" src={{model.bannerImage}}>
 			</div>
 		</div>
 	</div>
-</div>
+</section>

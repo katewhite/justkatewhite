@@ -1,0 +1,60 @@
+.content-section.states {
+	max-height: none;
+}
+.main-banner.about {
+	background-image: url('images/Kate-AboutMePhoto.jpg');
+	background-position: right;
+}
+.main-banner.about .headline-text {
+	text-transform: none;
+}
+.subtitle-text {
+	text-align: left;
+    text-transform: none;
+    max-width: 70%;
+}
+.description {
+	@include font-body();
+}
+.callout-container {
+	text-align: right;
+}
+.text-callout {
+	@include callout-text();
+}
+.state-container {
+	padding: 30px;
+	&:first-child {
+		padding-left: 0px;
+	}
+	&:last-child {
+		padding-right: 0px;
+	}
+}
+.state-image-container {
+	min-height: 280px;
+	padding: 20px;
+	padding-left: 0px;
+	display: table;
+    width: 100%;
+}
+.state-image-container.oklahoma {
+	padding: 0px;
+}
+.svg-container {
+	display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+.state-title.small-title {
+	margin-bottom: 20px;
+}
+.state-description {
+	@include font-body();
+}
+.state-svg {
+	path {
+		stroke: $gray-70;
+		fill: $gray-70;
+	}
+}

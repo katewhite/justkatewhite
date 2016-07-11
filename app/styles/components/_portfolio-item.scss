@@ -1,12 +1,7 @@
 .portfolio-item-text-container {
 	margin-top: 70px;
 }
-.portfolio-item-title {
-	@include font-section-header();
-    margin-bottom: 40px;
-}
 .portfolio-item-subtitle {
-	@include font-subtitle();
     margin-bottom: 40px;
 }
 .portfolio-item-description {
