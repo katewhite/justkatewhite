@@ -11,6 +11,9 @@
 			{{#if content.isImage}}
 				{{project-image model=content.content}}
 			{{/if}}
+			{{#if content.isComponent}}
+				{{project-component model=content.content}}
+			{{/if}}
 		{{/each}}
 	</div>
 	{{secondary-nav model=projects}}

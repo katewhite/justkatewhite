@@ -16,5 +16,8 @@ export default Model.extend({
 	}),
 	isImage: Ember.computed('contentType', function() {
 		return (this.get('contentType') == "image");
+	}),
+	isComponent: Ember.computed('contentType', function() {
+		return (this.get('contentType') == "component");
 	})
 });

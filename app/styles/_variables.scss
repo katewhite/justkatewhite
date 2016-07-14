@@ -5,6 +5,7 @@ $bright-teal: #B6D5D6;
 $muted-teal: #E4EBEC;
 $white: #f2f2f2;
 $gray-100: #304345;
+$gray-80: lighten($gray-100, 20);
 $gray-70: #97a1a2;
 $gray-50: lighten($gray-100, 50);
 
@@ -12,7 +13,8 @@ $gray-50: lighten($gray-100, 50);
 $header-height-large: 116px;
 $body-padding: 100px;
 $max-page-width: 2400px;
-$max-content-width: 900px;
+$max-content-width: 1020px;
+$max-content-text-width: 900px;
 
 // Font Sizes
 $font-small: 1em; //16px
