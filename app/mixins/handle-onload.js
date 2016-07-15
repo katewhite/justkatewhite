@@ -53,16 +53,6 @@ export default Ember.Mixin.create({
 		appController.set('timeoutComplete', value);
 	},
 
-	// initiateAnimations: function() {
-	// 	//Add the animate-css class "animated" to all items with the to-animate class
-	// 	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-	// 	console.log('Adding "animated" class');
-   //      $('.to-animate').addClass('animated').one(animationEnd, function() {
-			// console.log('Removing "animated" class');
-			// $(this).removeClass('animated');
-   //      });
-	// },
-
 	handleAfterRender: function() {
 		this.checkForImagesLoaded("afterRender");
 	}
