@@ -1,0 +1,59 @@
+.tapigo-color-typeface {
+	max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tapigo-colors-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+.tapigo-color-container {
+	flex: 1;
+	&:nth-child(1) {
+		.tapigo-color {
+			background-color: #323C48;
+		}
+	}
+	&:nth-child(2) {
+		.tapigo-color {
+			background-color: #819964;
+		}
+	}
+	&:nth-child(3) {
+		.tapigo-color {
+			background-color: #F5A740;
+		}
+	}
+	&:nth-child(4) {
+		.tapigo-color {
+			background-color: #716558;
+		}
+	}
+	&:nth-child(5) {
+		.tapigo-color {
+			background-color: #0094B1;
+		}
+	}
+}
+.tapigo-color {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.tapigo-typography-container {
+	margin-top: 50px;
+}
+.tapigo-typography {
+	text-align: left;
+	font-family: 'open sans';
+	font-size: 1.5em;
+	color: $gray-100;
+	padding-left: 6px;
+	div {
+		margin: 10px 10px 10px 0px;
+		display: table;
+	}
+}

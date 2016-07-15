@@ -17,11 +17,13 @@
 // Project Components
 @import 'components/enigami-colors';
 @import 'components/enigami-logo-typography';
+@import 'components/tapigo-color-typeface';
+@import 'components/tapigo-iconography';
 
 html, body {
 	font-family: 'Gibson', sans-serif;
 	color: $gray-100;
-	height: 100%;
+	// height: 100%;
 }
 // html {
 //     overflow: hidden;

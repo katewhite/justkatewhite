@@ -444,7 +444,7 @@
 		"id": "tapigo-12",
 		"attributes": {
 			"content-type": "image",
-			"content": "<Paper sketches>"
+			"content": "/assets/images/tapigo-sketches.jpg"
 		}
 	},{
 		"type": "content",
@@ -458,21 +458,7 @@
 		"id": "tapigo-14",
 		"attributes": {
 			"content-type": "image",
-			"content": "</Users/kwhite/Dropbox/Documents/Tapigo/Inspect - Design/Wireframes/createservice.pdf>"
-		}
-	},{
-		"type": "content",
-		"id": "tapigo-15",
-		"attributes": {
-			"content-type": "body",
-			"content": "Once we had iterated a bit and validated that the workflow made sense, I created and added higher fidelity comps to the workflow diagram to ensure it still made sense, and to inform the developer of which components to use where."
-		}
-	},{
-		"type": "content",
-		"id": "tapigo-16",
-		"attributes": {
-			"content-type": "image",
-			"content": "</Users/kwhite/Dropbox/Documents/Tapigo/Inspect - Design/Add_Service/CreateService-Comps.pdf>"
+			"content": "/assets/images/tapigo-createservice.jpg"
 		}
 	},{
 		"type": "content",
@@ -483,17 +469,10 @@
 		}
 	},{
 		"type": "content",
-		"id": "tapigo-18",
-		"attributes": {
-			"content-type": "image",
-			"content": "<GIF if possible?>"
-		}
-	},{
-		"type": "content",
 		"id": "tapigo-19",
 		"attributes": {
 			"content-type": "header",
-			"content": "Detail-Oriented Success"
+			"content": "A Detail-Oriented Success"
 		}
 	},{
 		"type": "content",

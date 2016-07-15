@@ -1,16 +1,20 @@
 export default Ember.Controller.extend({
+	
 	timeoutComplete: false,
 	imagesLoaded: false,
-	actions: {
-		scroll: function() {
-			var parentContainer = Ember.$('.headline-wrapper');
-		    var scrollTop = parentContainer.position().top + parentContainer.scrollTop() - 10;
-		    parentContainer.animate({
-		      scrollTop: scrollTop
-		    }, 1000);
-		}
-	},
 	showOverlay: Ember.computed('timeoutComplete', 'imagesLoaded', function() {
-		return (!this.get('timeoutComplete') || !this.get('imagesLoaded'));
+		if (!this.get('timeoutComplete') || !this.get('imagesLoaded')) {
+			window.scrollTo(0,0);
+			return true;
+		}
+		else {
+			// $('.headline-wrapper').velocity("slideDown", { delay: 500, duration: 1500 });
+			// var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+			// $('#test').addClass('animated').one(animationEnd, function() {
+			// 	console.log('Removing "animated" class');
+			// 	$(this).removeClass('animated');
+	  //       });
+			return false;
+		};
 	})
 });

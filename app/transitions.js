@@ -1,5 +1,5 @@
 export default function(){
-	var duration = 500;
+	var duration = 1000;
 	// this.transition(
 	// 	this.toRoute(['about', 'work', 'contact', 'project']),
 	// 	this.use('fade', { duration })

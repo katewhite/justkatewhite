@@ -1,4 +1,4 @@
-{{#liquid-bind allProjects use="toDown" as |projects|}}
+{{#liquid-bind allProjects use="fade" as |projects|}}
 	{{project-banner model=model}}
 	<div class="project-contents">
 		{{#each model.contents as |content|}}
@@ -12,7 +12,7 @@
 				{{project-image model=content}}
 			{{/if}}
 			{{#if content.isComponent}}
-				{{project-component model=content.content}}
+				{{project-component model=content}}
 			{{/if}}
 		{{/each}}
 	</div>

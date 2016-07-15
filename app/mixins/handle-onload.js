@@ -13,7 +13,7 @@ export default Ember.Mixin.create({
 			// Show the overlay for a minimum of 2 seconds to avoid skippy-ness
 			setTimeout(function() { self.setTimeoutComplete(true) }, 2000);
 			Ember.run.schedule('afterRender', this, function () {
-		    	this.checkForImagesLoaded("afterRender");
+		    	this.handleAfterRender();
 		    });
 		}
 	},
@@ -22,7 +22,7 @@ export default Ember.Mixin.create({
 		var self = this;
 		setTimeout(function() { self.setTimeoutComplete(true) }, 2000);
 		Ember.run.schedule('afterRender', this, function () {
-	    	this.checkForImagesLoaded("afterRender");
+	    	this.handleAfterRender();
 	    });
 	}.on('activate'),
 
@@ -32,7 +32,6 @@ export default Ember.Mixin.create({
 		$('.load-image').imagesLoaded({ background: true })
 		.always( function( instance ) {
 			self.setImagesLoaded(true);
-			self.initiateAnimations();
 			console.log('all images loaded');
 		})
 		.fail( function() {
@@ -54,13 +53,17 @@ export default Ember.Mixin.create({
 		appController.set('timeoutComplete', value);
 	},
 
-	initiateAnimations: function() {
-		//Add the animate-css class "animated" to all items with the to-animate class
-		var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-		console.log('Adding "animated" class');
-        $('.to-animate').addClass('animated').one(animationEnd, function() {
-			console.log('Removing "animated" class');
-			$(this).removeClass('animated');
-        });
+	// initiateAnimations: function() {
+	// 	//Add the animate-css class "animated" to all items with the to-animate class
+	// 	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	// 	console.log('Adding "animated" class');
+   //      $('.to-animate').addClass('animated').one(animationEnd, function() {
+			// console.log('Removing "animated" class');
+			// $(this).removeClass('animated');
+   //      });
+	// },
+
+	handleAfterRender: function() {
+		this.checkForImagesLoaded("afterRender");
 	}
 });

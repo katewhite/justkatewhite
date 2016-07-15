@@ -35,4 +35,7 @@
 	img.aventura {
 		max-width: 680px;
 	}
+	@include breakpoint(large down) { 
+		padding: 20px;
+	}
 }
