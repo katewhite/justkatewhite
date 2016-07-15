@@ -5,6 +5,7 @@ import { belongsTo, hasMany } from 'ember-data/relationships';
 export default Model.extend({
 	contentType: attr(),
 	content: attr(),
+	class: attr(),
 	project: belongsTo('project'),
 
 	// Computed

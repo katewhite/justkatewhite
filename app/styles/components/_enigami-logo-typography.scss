@@ -1,0 +1,21 @@
+.enigami-logo {
+	img {
+		padding: 30px;
+	}
+}
+.enigami-typography-container {
+	text-align: center;
+	margin-top: 50px;
+}
+.enigami-typography {
+	text-align: left;
+	font-family: 'lato';
+	font-size: 1.5em;
+	color: $gray-100;
+	display: table;
+    margin: auto;
+	div {
+		margin: 10px 10px 10px 0px;
+		display: table;
+	}
+}

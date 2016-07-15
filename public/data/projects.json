@@ -176,8 +176,8 @@
 		"type": "content",
 		"id": "enigami-6",
 		"attributes": {
-			"content-type": "image",
-			"content": "/assets/images/Enigami-LogoAndTypeface.jpg"
+			"content-type": "component",
+			"content": "enigami-logo-typography"
 		}
 	},{
 		"type": "content",
@@ -205,7 +205,8 @@
 		"id": "enigami-10",
 		"attributes": {
 			"content-type": "image",
-			"content": "/assets/images/enigami-ipad.jpg"
+			"content": "/assets/images/enigami-createaccount.jpg",
+			"class": "enigami-create-account"
 		}
 	},{
 		"type": "content",
@@ -225,8 +226,8 @@
 		"type": "content",
 		"id": "enigami-13",
 		"attributes": {
-			"content-type": "component",
-			"content": "enigami-workflow-comparison"
+			"content-type": "image",
+			"content": "/assets/images/Enigami-WorkflowComparison.jpg"
 		}
 	},{
 		"type": "content",
@@ -247,7 +248,7 @@
 		"id": "enigami-16",
 		"attributes": {
 			"content-type": "image",
-			"content": "<web, iPad, and iPhone comparisons of various screens>"
+			"content": "/assets/images/Enigami-Responsive.jpg"
 		}
 	},{
 		"type": "content",

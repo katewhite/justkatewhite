@@ -1,7 +1,33 @@
+.enigami-color-container {
+	&:nth-child(1) {
+		.enigami-color {
+			background-color: #526275;
+		}
+	}
+	&:nth-child(2) {
+		.enigami-color {
+			background-color: #6B6E87;
+		}
+	}
+	&:nth-child(3) {
+		.enigami-color {
+			background-color: #ECEEF4;
+		}
+	}
+	&:nth-child(4) {
+		.enigami-color {
+			background-color: #68A192;
+		}
+	}
+	&:nth-child(5) {
+		.enigami-color {
+			background-color: #E0B540;
+		}
+	}
+}
 .enigami-color {
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	display: inline-block;
-	background-color: gray;
 	border-radius: 5px;
 }
