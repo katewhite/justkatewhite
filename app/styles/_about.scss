@@ -34,6 +34,7 @@
 }
 .state-image-container {
 	min-height: 280px;
+	max-height: 280px;
 	padding: 20px;
 	padding-left: 0px;
 	display: table;
@@ -41,6 +42,12 @@
 }
 .state-image-container.oklahoma {
 	padding: 0px;
+}
+.state-image-container.new-mexico {
+	padding: 0px;
+	svg {
+		margin: 37px 59px 37px 0px;
+	}
 }
 .svg-container {
 	display: table-cell;

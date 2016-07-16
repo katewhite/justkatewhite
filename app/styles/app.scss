@@ -1,7 +1,8 @@
 @import "settings";
 @import 'foundation';
-@include foundation-everything;
+@include foundation-everything(true);
 
+@import 'overrides';
 @import 'variables';
 @import 'work';
 @import 'project';
@@ -16,22 +17,14 @@
 @import 'components/portfolio-item';
 @import 'components/site-footer';
 // Project Components
-@import 'components/enigami-colors';
-@import 'components/enigami-logo-typography';
-@import 'components/tapigo-color-typeface';
-@import 'components/tapigo-iconography';
+@import 'components/enigami';
+@import 'components/tapigo';
+@import 'components/aventura';
 
 html, body {
 	font-family: 'Gibson', sans-serif;
 	color: $gray-100;
-	// height: 100%;
 }
-// html {
-//     overflow: hidden;
-// }
-// body {
-//     overflow: auto;
-// }
 h1, h2, h3 {
 	margin: 0px;
 }
@@ -58,19 +51,18 @@ a {
 section {
 	padding-left: $body-padding;
 	padding-right: $body-padding;
+	@include breakpoint(medium down) { 
+		padding-left: $body-padding-medium;
+		padding-right: $body-padding-medium;	
+	}
 }
 section.content-section {
 	border-bottom: 1px solid $gray-50;
 	padding-top: 100px;
-	padding-bottom: 130px;
+	padding-bottom: 100px;
 	max-height: 700px;
 	.row {
 		position: relative;
-	}
-	.centered {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
 	}
 }
 section.content-section.banner {
@@ -79,7 +71,19 @@ section.content-section.banner {
 	overflow: hidden;
 }
 .hidden {
-	opacity: 0;
+     opacity:0;
+}
+.visible {
+     opacity:1;
+}
+.outside-viewport {
+     opacity:0;
+}
+.in-viewport {
+     opacity:1;
+     transition: all .7s ease;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
 }
 .loading-overlay {
 	opacity: 1;
@@ -102,13 +106,3 @@ body > .ember-view {
     margin-bottom: 40px;
 }
 
-// Foundation overrides
-.row {
-	margin-left: 0px;
-	margin-right: 0px;
-    max-width: none;
-}
-.columns {
-	padding-left: 0px;
-	padding-right: 0px;
-}

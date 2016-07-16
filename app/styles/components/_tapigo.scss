@@ -57,3 +57,14 @@
 		display: table;
 	}
 }
+.icon-containers {
+	display: flex;
+}
+.icon-container {
+	flex: 1;
+}
+.icon-label {
+	@include font-body();
+	margin-top: 30px;
+	font-size: 1em;
+}

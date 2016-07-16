@@ -1,5 +1,6 @@
 .portfolio-item-text-container {
-	margin-top: 70px;
+	// margin-top: 70px;
+    padding-right: 40px;
 }
 .portfolio-item-subtitle {
     margin-bottom: 40px;
@@ -35,7 +36,7 @@
 	img.aventura {
 		max-width: 680px;
 	}
-	@include breakpoint(large down) { 
-		padding: 20px;
+	img {
+		width: 100%;
 	}
 }

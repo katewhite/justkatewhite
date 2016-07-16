@@ -1,6 +1,10 @@
 import Ember from 'ember';
 import HandleOnLoad from 'justkatewhite/mixins/handle-onload';
+import ViewportEntry from 'justkatewhite/mixins/viewport-entry';
 
-export default Ember.Component.extend(HandleOnLoad, {
-	classNames: ['project-body']
+export default Ember.Component.extend(HandleOnLoad, ViewportEntry, {
+	classNames: ['project-body'],
+	registerScrollReveal: function() {
+		// ScrollReveal().reveal('.project-body');
+	}.on('didInsertElement')
 });

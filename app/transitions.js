@@ -3,4 +3,8 @@ export default function(){
 	this.transition (
 		this.use('fade', { duration })
 	);
+	this.transition (
+		this.hasClass('project-container'),
+		this.use('fade', { duration: 1000 })
+	)
 }

@@ -1,7 +1,7 @@
-{{#liquid-bind allProjects use="fade" as |projects|}}
-	{{project-banner model=model}}
+{{#liquid-bind model class="project-container" as |currentModel|}}
+	{{project-banner model=currentModel}}
 	<div class="project-contents">
-		{{#each model.contents as |content|}}
+		{{#each currentModel.contents as |content|}}
 			{{#if content.isHeader}}
 				{{project-header model=content.content}}
 			{{/if}}
@@ -16,5 +16,5 @@
 			{{/if}}
 		{{/each}}
 	</div>
-	{{secondary-nav model=projects}}
 {{/liquid-bind}}
+{{secondary-nav model=allProjects}}

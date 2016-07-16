@@ -9,6 +9,12 @@
     padding-left: $body-padding;
     padding-right: $body-padding;
     max-width: none;
+    @include breakpoint(medium down) { 
+		margin-left: calc(0px - #{$body-padding-medium});
+	    margin-right: $body-padding-medium;
+	    padding-left: $body-padding-medium;
+	    padding-right: $body-padding-medium;
+    }
 }
 .header-logo {
 	line-height: 50px;

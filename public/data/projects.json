@@ -517,8 +517,8 @@
 		"type": "content",
 		"id": "aventura-6",
 		"attributes": {
-			"content-type": "image",
-			"content": "<original registration screen> vs. <RegisterCard-Aventura.png>"
+			"content-type": "component",
+			"content": "aventura-original-new-registration"
 		}
 	},{
 		"type": "content",
@@ -538,8 +538,8 @@
 		"type": "content",
 		"id": "aventura-9",
 		"attributes": {
-			"content-type": "image",
-			"content": "<original login screen> vs. <Login-bgWhite-tcGray.png>"
+			"content-type": "component",
+			"content": "aventura-original-new-login"
 		}
 	},{
 		"type": "content",
@@ -581,7 +581,8 @@
 		"id": "aventura-15",
 		"attributes": {
 			"content-type": "image",
-			"content": "<all the different hospital screens>"
+			"content": "assets/images/aventura-customerscreens.jpg",
+			"class": "customer-screens"
 		}
 	},{
 		"type": "content",

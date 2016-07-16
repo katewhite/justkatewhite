@@ -4,14 +4,14 @@ export default Ember.Mixin.create({
 	actions: {
 		// Have to handle willTransition as well for the case when we are switching between projects.
 		// Switching from project/spigot to project/tapigo does not throw the activate event.
-		willTransition: function() {
+		willTransition: function(transition) {
 			console.log('WILL TRANSITION');
 			var self = this;
-			// Reset values so we see the averlay everytime
+			// Reset values so we see the overlay everytime
 			this.setTimeoutComplete(false);
 			this.setImagesLoaded(false);
 			// Show the overlay for a minimum of 2 seconds to avoid skippy-ness
-			setTimeout(function() { self.setTimeoutComplete(true) }, 2000);
+			setTimeout(function() { self.setTimeoutComplete(true) }, 1000);
 			Ember.run.schedule('afterRender', this, function () {
 		    	this.handleAfterRender();
 		    });
