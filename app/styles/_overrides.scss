@@ -8,3 +8,12 @@
 	padding-left: 0px;
 	padding-right: 0px;
 }
+
+
+
+// These are supposed to be working in the flex-grid sass, but aren't for some reason, so grabbed them from the examples on the foundation site
+.row.align-middle {
+	-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}

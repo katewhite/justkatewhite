@@ -1,20 +1,38 @@
-.header-container.row {
+#main-nav {
+	display: flex;
+	@include breakpoint(medium down) { 
+		display: none;
+	}
+}
+.header-container {
 	padding-top: 20px;
 	padding-bottom: 20px;
     width: 100%;
     z-index: 9999;
     position: absolute;
+    max-width: none;
     margin-left: calc(0px - #{$body-padding});
     margin-right: $body-padding;
     padding-left: $body-padding;
     padding-right: $body-padding;
-    max-width: none;
+    position: fixed;
     @include breakpoint(medium down) { 
 		margin-left: calc(0px - #{$body-padding-medium});
 	    margin-right: $body-padding-medium;
 	    padding-left: $body-padding-medium;
 	    padding-right: $body-padding-medium;
     }
+    @include breakpoint(small down) { 
+		margin-left: calc(0px - #{$body-padding-small});
+	    margin-right: $body-padding-small;
+	    padding-left: $body-padding-small;
+	    padding-right: $body-padding-small;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+    }
+}
+.header-container.fixed {
+	background-color: white;
 }
 .header-logo {
 	line-height: 50px;

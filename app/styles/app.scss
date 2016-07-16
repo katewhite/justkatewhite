@@ -11,6 +11,7 @@
 @import 'animations';
 @import 'components/loading-overlay';
 @import 'components/main-nav';
+@import 'components/mobile-nav';
 @import 'components/secondary-nav';
 @import 'components/project-banner';
 @import 'components/project-header';
@@ -30,9 +31,6 @@ h1, h2, h3 {
 }
 h1 {
 	@include font-title();
-	@include breakpoint(large down) { 
-		font-size: $font-large;	
-	}
 }
 h2 {
 	@include font-subtitle();
@@ -54,6 +52,10 @@ section {
 	@include breakpoint(medium down) { 
 		padding-left: $body-padding-medium;
 		padding-right: $body-padding-medium;	
+	}
+	@include breakpoint(small down) { 
+		padding-left: $body-padding-small;
+		padding-right: $body-padding-small;	
 	}
 }
 section.content-section {

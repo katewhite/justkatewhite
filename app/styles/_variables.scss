@@ -8,11 +8,13 @@ $gray-100: #304345;
 $gray-80: lighten($gray-100, 20);
 $gray-70: #97a1a2;
 $gray-50: lighten($gray-100, 50);
+$gray-10: lighten(#97a1a2, 35);
 
 // Sizes
 $header-height-large: 116px;
 $body-padding: 100px;
 $body-padding-medium: 60px;
+$body-padding-small: 20px;
 $max-page-width: 2400px;
 $max-content-width: 1020px;
 $max-content-text-width: 900px;
@@ -30,6 +32,12 @@ $font-extra-large: 7.594em; //121.5px
   font-size: $font-extra-large;
   text-transform: capitalize;
   color: $gray-100;
+  @include breakpoint(large down) { 
+    font-size: $font-large; 
+  }
+  @include breakpoint(medium down) { 
+    font-size: 4.6em;
+  }
 }
 @mixin font-subtitle() {
   font-weight: 100;
@@ -53,8 +61,8 @@ $font-extra-large: 7.594em; //121.5px
 
 @mixin font-secondary-nav() {
 	font-size: $font-large;
-    font-weight: 600;
-    color: $gray-70;
+  font-weight: 600;
+  color: $gray-70;
 }
 @mixin font-project-description() {
   font-weight: 500;

@@ -5,14 +5,27 @@
 	min-height: 700px;
 	width: 100vw;
     max-width: none;
-    padding-right: 100px;
-	padding-left: 100px;
-	margin-top: -50px;
-    margin-right: -200px;
-	margin-left: -100px;
 	background-image: none;
 	background-size: cover;
 	background-position: right;
+	margin-top: -50px;
+	margin-left: calc(0px - #{$body-padding});
+    margin-right: $body-padding;
+    padding-left: $body-padding;
+    padding-right: $body-padding;
+    @include breakpoint(medium down) { 
+		margin-left: calc(0px - #{$body-padding-medium});
+	    margin-right: $body-padding-medium;
+	    padding-left: $body-padding-medium;
+	    padding-right: $body-padding-medium;
+    }
+    @include breakpoint(small down) { 
+		margin-left: calc(0px - #{$body-padding-small});
+	    margin-right: $body-padding-small;
+	    padding-left: $body-padding-small;
+	    padding-right: $body-padding-small;
+	    margin-top: -70px;
+    }
 }
 .main-banner {
 	padding-top: 120px;
@@ -33,7 +46,25 @@
 .headline-text {
 	text-transform: lowercase;
 	text-align: left;
-    margin-top: -20px;
+    margin-top: 0px;
+    line-height: 1.25em;
+    @media screen and (max-width: 723px) {
+    	font-size: 3.375em;
+    	margin-bottom: 10px;
+    }
+    @media screen and (max-width: 546px) {
+    	font-size: $font-medium-large;
+    	margin-bottom: 5px;
+    }
+}
+.subtitle-text {
+	@media screen and (max-width: 723px) {
+    	font-size: 1.75em;
+    }
+    @media screen and (max-width: 546px) {
+    	// font-size: 1.75em;
+    	// margin-bottom: 5px;
+    }
 }
 
 // Project list

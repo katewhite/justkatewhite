@@ -3,9 +3,17 @@
 	padding-bottom: 20px;
 	margin-left: 30px;
 	margin-right: 30px;
+	@include breakpoint(small down) {
+		padding-top:5px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 	.social-links {
 		float: right;
 		display: inline-block;
+		@include breakpoint(small down) {
+			float: none;
+		}
 	}
 }
 .copyright {
@@ -28,5 +36,16 @@
     -moz-transition: all .4s ease;
 	&:hover {
 		color: lighten($gray-100, 20);
+	}
+	@include breakpoint(small down) {
+		margin-left: 20px;
+		width: 45px;
+		height: 45px;
+		&:first-child {
+			margin-left: -2px;
+		}
+		.fa-2x {
+			font-size: 1.5em;
+		}
 	}
 }

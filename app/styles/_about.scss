@@ -9,6 +9,28 @@
 .main-banner.about .headline-text {
 	text-transform: none;
 }
+.main-banner.about {
+	h1.headline-text {
+		margin-right: 10%;
+	    @include breakpoint(medium down) {
+	    	margin-right: 20%;
+	    }
+	    @media screen and (max-width: 546px) {
+	    	font-size: 2.5em;
+	    }
+	}
+	.headline-wrapper {
+		@media screen and (max-width: 546px) {
+	    	padding-top: 220px;
+	    }
+	}
+	.subtitle-text {
+	    @media screen and (max-width: 546px) {
+	    	font-size: 1.5em;
+	    	max-width: 100%;
+	    }
+	}
+}
 .subtitle-text {
 	text-align: left;
     text-transform: none;

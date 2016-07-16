@@ -1,5 +1,17 @@
+.portfolio-item {
+	section.content-section {
+		@include breakpoint(small down) { 
+			max-height: 1200px;
+		}
+	}
+	section.content-section.enigami {
+		@include breakpoint(small down) {
+			height: 1200px;
+		}
+	}
+}
+
 .portfolio-item-text-container {
-	// margin-top: 70px;
     padding-right: 40px;
 }
 .portfolio-item-subtitle {
@@ -38,5 +50,21 @@
 	}
 	img {
 		width: 100%;
+	}
+	@include breakpoint(small down) { 
+		margin-top: 70px;
+	}
+}
+
+.enigami-portfolio-item {
+	max-height: 500px;
+	.portfolio-item-image-container {
+		margin-top: 400px;
+		@include breakpoint(large down) { 
+			margin-top: 250px;
+		}
+		@include breakpoint(small down) { 
+			margin-top: 70px;
+		}
 	}
 }
