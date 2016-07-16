@@ -1,31 +1,52 @@
+
 .project-banner {
 	background-image: none;
 	overflow: hidden;
 	.row {
 		height: 100%;
+		@include breakpoint(small down) {
+			height: 700px;
+		}
 	}
-}
-.banner-title-container {
-	margin-top: 280px;
-}
-.banner-image {
-	margin-top: 240px;
-	text-align: center;
+
+	.banner-title-container {
+		margin-top: 280px;
+		@include breakpoint(small down) {
+			margin-top: 240px;
+		}
+	}
+	.banner-image {
+		margin-top: 240px;
+		text-align: center;
+		@include breakpoint(small down) {
+			margin-top: 0px;
+	    	opacity: .1;
+		}
+	}
 }
 
 // Project Specific
 .project-banner.tapigo {
 	img {
 		max-width: 70%;
+		@include breakpoint(small down) {
+			margin-top: 0px;
+		}
 	}
 }
 .project-banner.enigami, .project-banner.tapigo {
 	.banner-image {
 		margin-top: 220px;
+		@include breakpoint(small down) {
+			margin-top: -320px;
+		}
 	}
 }
 .project-banner.aventura {
 	.banner-image {
 		margin-top: 170px;
+		@include breakpoint(small down) {
+			margin-top: 0px;
+		}
 	}
 }

@@ -7,6 +7,9 @@
     margin-bottom: 0px;
     margin-top: 100px;
     padding: 60px;
+    @media screen and (max-width: 660px) {
+		padding: 10px;
+    }
 	.secondary-nav-item-container {
 	    margin-top: 30px;
 	    margin-bottom: 30px;
@@ -24,6 +27,12 @@
 				stroke: lighten($yellow, 20);
 			}
 		}
+		@include breakpoint(small down) {
+			font-size: 3.375em;
+		}
+		@media screen and (max-width: 660px) {
+			font-size: $font-medium-large;
+		}
 	}
 	.svg-arrow {
 		display: inline-block;
@@ -33,6 +42,14 @@
 	svg {
 		width: 130px;
     	height: 40px;
+    	@include breakpoint(small down) {
+			margin-top: 30px;
+    	}
+		@media screen and (max-width: 660px) {
+	    	width: 70px;
+		    height: 30px;
+		    margin-top: 26px;
+		}
 	}
 	#PortfolioItem {
 		stroke: $yellow;
