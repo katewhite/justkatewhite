@@ -8,6 +8,9 @@
 	@include breakpoint(medium down) { 
 		display: block;
 	}
+	@include breakpoint(small down) { 
+		height: 75px;
+	}
 	.header-logo, .nav {
 		display: inline-block;
 	}

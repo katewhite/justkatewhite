@@ -3,7 +3,7 @@
 	padding-bottom: 20px;
 	margin-left: 30px;
 	margin-right: 30px;
-	@include breakpoint(small down) {
+	@media screen and (max-width: 500px) {
 		padding-top:5px;
 		margin-left: 20px;
 		margin-right: 20px;
@@ -11,7 +11,7 @@
 	.social-links {
 		float: right;
 		display: inline-block;
-		@include breakpoint(small down) {
+		@media screen and (max-width: 500px) {
 			float: none;
 		}
 	}
@@ -37,10 +37,11 @@
 	&:hover {
 		color: lighten($gray-100, 20);
 	}
-	@include breakpoint(small down) {
+	@media screen and (max-width: 635px) {
 		margin-left: 20px;
 		width: 45px;
 		height: 45px;
+		margin-top: 5px;
 		&:first-child {
 			margin-left: -2px;
 		}

@@ -1,6 +1,9 @@
 .content-section.states {
 	max-height: none;
 }
+.content-section.about {
+	//max-height: 900px;
+}
 .main-banner.about {
 	background-image: url('images/Kate-AboutMePhoto.jpg');
 	background-position: right;
@@ -41,50 +44,101 @@
 }
 .callout-container {
 	text-align: right;
+	@include breakpoint(small down) {
+		margin-top: 50px;
+    	text-align: left;
+	}
 }
 .text-callout {
 	@include callout-text();
 }
-.state-container {
-	padding: 30px;
-	&:first-child {
+.content-section.states.large {
+	display: block;
+	@include breakpoint(large down) {
+		display: none;
+	}
+	.state-container {
+		padding: 30px;
+		&:first-child {
+			padding-left: 0px;
+		}
+		&:last-child {
+			padding-right: 0px;
+		}
+	}
+	.state-image-container {
+		min-height: 280px;
+		max-height: 280px;
+		padding: 20px;
 		padding-left: 0px;
+		display: table;
+	    width: 100%;
 	}
-	&:last-child {
-		padding-right: 0px;
+	.state-image-container.oklahoma {
+		padding: 0px;
 	}
-}
-.state-image-container {
-	min-height: 280px;
-	max-height: 280px;
-	padding: 20px;
-	padding-left: 0px;
-	display: table;
-    width: 100%;
-}
-.state-image-container.oklahoma {
-	padding: 0px;
-}
-.state-image-container.new-mexico {
-	padding: 0px;
-	svg {
-		margin: 37px 59px 37px 0px;
+	.state-image-container.new-mexico {
+		padding: 0px;
+		svg {
+			margin: 37px 59px 37px 0px;
+		}
 	}
-}
-.svg-container {
-	display: table-cell;
-    vertical-align: middle;
-    text-align: left;
-}
-.state-title.small-title {
-	margin-bottom: 20px;
-}
-.state-description {
-	@include font-body();
+	.svg-container {
+		display: table-cell;
+	    vertical-align: middle;
+	    text-align: left;
+	}
+	.state-title.small-title {
+		margin-bottom: 20px;
+	}
+	.state-description {
+		@include font-body();
+		@include breakpoint(large down) {
+			font-size: 1.25em;
+			line-height: 1.5em;
+		}
+	}
+	
 }
 .state-svg {
 	path {
 		stroke: $gray-70;
 		fill: $gray-70;
+	}
+}
+.content-section.states.small {
+	display: none;
+	@include breakpoint(large down) {
+		display: block;
+	}
+}
+.state-container-h {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 200px;
+    &:last-child {
+    	margin-bottom: 50px;
+    }
+    @include breakpoint(small down) {
+    	padding-left: 30px;
+    }
+    @media screen and (max-width: 490px) {
+		padding-left: 0px;
+    }
+}
+.state-image-container-h {
+	padding: 20px;
+	@include breakpoint(small down) {
+		max-width: 400px;
+		margin-bottom: 30px;
+	}
+}
+.state-description-container-h {
+    padding-left: 80px;
+    @include font-body();
+    @include breakpoint(small down) {
+		padding-left: 0px;
+		max-width: 500px;
 	}
 }
