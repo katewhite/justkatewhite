@@ -227,7 +227,7 @@
 		"id": "enigami-13",
 		"attributes": {
 			"content-type": "image",
-			"content": "/assets/images/Enigami-WorkflowComparison.jpg"
+			"content": "/assets/images/enigami-workflowcomparison.jpg"
 		}
 	},{
 		"type": "content",
@@ -248,7 +248,7 @@
 		"id": "enigami-16",
 		"attributes": {
 			"content-type": "image",
-			"content": "/assets/images/Enigami-Responsive.jpg"
+			"content": "/assets/images/enigami-responsive.jpg"
 		}
 	},{
 		"type": "content",
@@ -339,7 +339,7 @@
 		"id": "spigot-11",
 		"attributes": {
 			"content-type": "image",
-			"content": "/assets/images/Spigot-ColorsTypography.png"
+			"content": "/assets/images/spigot-colorstypography.png"
 		}
 	},{
 		"type": "content",
@@ -353,7 +353,7 @@
 		"id": "spigot-13",
 		"attributes": {
 			"content-type": "image",
-			"content": "/assets/images/Spigot-FontStyles.png"
+			"content": "/assets/images/spigot-fontstyles.png"
 		}
 	},{
 		"type": "content",
@@ -367,7 +367,7 @@
 		"id": "spigot-15",
 		"attributes": {
 			"content-type": "image",
-			"content": "/assets/images/Spigot-Components.png"
+			"content": "/assets/images/spigot-components.png"
 		}
 	},{
 		"type": "content",
