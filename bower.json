@@ -9,6 +9,7 @@
     "font-awesome": "~4.5.0"
   },
   "devDependencies": {
-    "scrollreveal": "^3.2.0"
+    "scrollreveal": "^3.2.0",
+    "foundation-sites": "^6.2.3"
   }
 }
