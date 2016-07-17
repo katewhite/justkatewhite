@@ -1,8 +1,12 @@
+// FOUNDATION
 @import 'settings';
-// @import 'foundation/foundation';
-// @import 'foundation';
-// @include foundation-everything(true);
+@import 'util/util';
+@import 'global';
+@import 'grid/grid';
+@include foundation-global-styles;
+@include foundation-flex-grid;
 
+// APP
 @import 'overrides';
 @import 'variables';
 @import 'work';
