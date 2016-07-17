@@ -14,6 +14,15 @@ module.exports = function(environment) {
       }
     },
 
+    // Set or update content security policies
+    contentSecurityPolicy: {
+      'font-src': "'self' data:",
+      'style-src': "'self' 'unsafe-inline' use.typekit.net p.typekit.net",
+      'img-src': "'self' ",
+      'connect-src': "'self' ",
+      'script-src': "'self' 'unsafe-inline' use.typekit.net"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
