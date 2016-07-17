@@ -43,7 +43,6 @@
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "liquid-fire": "0.23.1",
-    "loader.js": "^4.0.1",
-    "queryloader2": "^3.1.0"
+    "loader.js": "^4.0.1"
   }
 }
