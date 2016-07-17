@@ -21,6 +21,7 @@
 @import 'components/enigami';
 @import 'components/tapigo';
 @import 'components/aventura';
+@import 'components/spigot';
 
 html, body {
 	font-family: 'Gibson', sans-serif;
@@ -62,7 +63,7 @@ section.content-section {
 	border-bottom: 1px solid $gray-50;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	//max-height: 700px;
+	max-height: 700px;
 	.row {
 		position: relative;
 	}

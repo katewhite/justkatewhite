@@ -61,7 +61,11 @@
 					{ "type": "content", "id": "spigot-11" },
 					{ "type": "content", "id": "spigot-12" },
 					{ "type": "content", "id": "spigot-13" },
-					{ "type": "content", "id": "spigot-14" }
+					{ "type": "content", "id": "spigot-14" },
+					{ "type": "content", "id": "spigot-15" },
+					{ "type": "content", "id": "spigot-16" },
+					{ "type": "content", "id": "spigot-17" },
+					{ "type": "content", "id": "spigot-18" }
 				]
 			}
 		}
@@ -280,84 +284,112 @@
 		"id": "spigot-3",
 		"attributes": {
 			"content-type": "body",
-			"content": "Kogi shabby chic seitan austin VHS, mlkshk +1. Biodiesel intelligentsia butcher selfies, narwhal organic craft beer listicle mumblecore actually roof party humblebrag. Everyday carry kinfolk before they sold out yuccie, vegan paleo pour-over portland. Semiotics brooklyn typewriter, pop-up seitan meditation chia celiac pork belly."
+			"content": "The Spigot Labs dashboard application is used by both vendors and attendees of an event.  While the Spigot Labs product is dynamic enough to be used with any type of event, the most common use-cases are job fairs, beer festivals, and corporate conferences.  The first event to utilize this dashboard was a “speed interviewing” event.  At the event, each interviewee had about 3 minutes to speak with each interviewer before moving on to the next.  As such, it was important that as little time as possible was taken up with introductions and basic bio information sharing.  With Spigot Labs, the interviewees were able to tap their badge at the station, at which point the interviewee had access to their general work information as well as any other links the attendee provided in their profile.  The other main goal of the dashboard was to serve as a location for interviewers to record notes on each interviewee."
 		}
 	},{
 		"type": "content",
 		"id": "spigot-4",
 		"attributes": {
 			"content-type": "header",
-			"content": "Visual Details and Usability"
+			"content": "Visual Details"
 		}
 	},{
 		"type": "content",
 		"id": "spigot-5",
 		"attributes": {
 			"content-type": "body",
-			"content": "- Small details because there is so much data and information on the screen - Order of attendees in list"
+			"content": "The dashboard serves as a place for users to view all of their events, each attendee at that event, as well as any booths or stations they had visited at an event.  My usual visual style of large components and exaggerated spacing did not suit this project well, as there was a lot of information that needed to be visible within the viewport.  I decided to take advantage of this difference in the project and pay close attention to small details in the design.  I used the red and yellow accent colors on a dark background to add pop to thin lines in the selection state, user pictures, and rating components seen below."
 		}
 	},{
 		"type": "content",
 		"id": "spigot-6",
+		"attributes": {
+			"content-type": "component",
+			"content": "spigot-visual-details"
+		}
+	},{
+		"type": "content",
+		"id": "spigot-7",
 		"attributes": {
 			"content-type": "header",
 			"content": "Layout"
 		}
 	},{
 		"type": "content",
-		"id": "spigot-7",
+		"id": "spigot-8",
 		"attributes": {
 			"content-type": "body",
 			"content": "While a fully responsive mobile site was not a requirement for this project, I designed it with the move to mobile in mind.  As such, I chose a three column approach which makes the hierarchy of events to attendees to the attendee details clear.  This will translate well on mobile as a drill-down affect from one screen to the next.  Further, for the desktop app, it was important to be able to flip from person to person quickly and see new entries added to the top of the list when a visitor taps their badge.  The full list of attendees always visible and central to the layout supports this requirement."
 		}
 	},{
 		"type": "content",
-		"id": "spigot-8",
+		"id": "spigot-9",
 		"attributes": {
 			"content-type": "header",
 			"content": "Style Guide Driven Development"
 		}
 	},{
 		"type": "content",
-		"id": "spigot-9",
+		"id": "spigot-10",
 		"attributes": {
 			"content-type": "body",
 			"content": "Designing this app for the developer founder, I wanted to make the ability to add onto the site without bothering the styles as easy as possible.  With this styleguide, it’s easy to see each component of the site and what code was required to utilize them."
 		}
 	},{
 		"type": "content",
-		"id": "spigot-10",
+		"id": "spigot-11",
 		"attributes": {
 			"content-type": "image",
 			"content": "/assets/images/Spigot-ColorsTypography.png"
 		}
 	},{
 		"type": "content",
-		"id": "spigot-11",
+		"id": "spigot-12",
 		"attributes": {
 			"content-type": "body",
 			"content": "I created mixins for font sizes and styles.  This way, the SASS is far cleaner, and if they need to be changed at all, the change is required only in the mixin rather than through out the code."
 		}
 	},{
 		"type": "content",
-		"id": "spigot-12",
+		"id": "spigot-13",
 		"attributes": {
 			"content-type": "image",
 			"content": "/assets/images/Spigot-FontStyles.png"
 		}
 	},{
 		"type": "content",
-		"id": "spigot-13",
+		"id": "spigot-14",
 		"attributes": {
 			"content-type": "body",
 			"content": "With the use of components, the code is reusable and modular.  By utilizing Ember components, Handlebars, and SASS partial files, the styleguide becomes live.  The components, styles, and bindings used in the styleguide are the same ones used in the app itself.  If updates need to be made to any of the styles, components, or component behaviors, they will be reflected in the styleguide and throughout the app."
 		}
 	},{
 		"type": "content",
-		"id": "spigot-14",
+		"id": "spigot-15",
 		"attributes": {
 			"content-type": "image",
 			"content": "/assets/images/Spigot-Components.png"
+		}
+	},{
+		"type": "content",
+		"id": "spigot-16",
+		"attributes": {
+			"content-type": "header",
+			"content": "Final Product"
+		}
+	},{
+		"type": "content",
+		"id": "spigot-17",
+		"attributes": {
+			"content-type": "body",
+			"content": "The end result is a slick, polished dashboard with nice visual detail.  Users are able to view a large amount of connections on one screen and see the full hierarchy of events, attendees, and attendee details."
+		}
+	},{
+		"type": "content",
+		"id": "spigot-18",
+		"attributes": {
+			"content-type": "image",
+			"content": "/assets/images/spigot-flatbrowser.png"
 		}
 	},{
 		"type": "content",

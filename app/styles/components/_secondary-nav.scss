@@ -7,6 +7,9 @@
     margin-bottom: 0px;
     margin-top: 100px;
     padding: 60px;
+    @include breakpoint(small down) {
+    	margin: 0px;
+    }
     @media screen and (max-width: 660px) {
 		padding: 10px;
     }

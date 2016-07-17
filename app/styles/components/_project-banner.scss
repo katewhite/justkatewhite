@@ -12,7 +12,7 @@
 	.banner-title-container {
 		margin-top: 280px;
 		@include breakpoint(small down) {
-			margin-top: 240px;
+			margin-top: 260px;
 		}
 	}
 	.banner-image {
@@ -31,6 +31,10 @@
 		max-width: 70%;
 		@include breakpoint(small down) {
 			margin-top: 0px;
+			max-width: 60%;
+		}
+		@media screen and (max-width: 500px) {
+			max-width: 100%;
 		}
 	}
 }
@@ -48,5 +52,22 @@
 		@include breakpoint(small down) {
 			margin-top: 0px;
 		}
+	}
+}
+.project-banner.spigot {
+	.banner-image {
+		@include breakpoint(small down) {
+			margin-top: -200px;
+		}
+		@media screen and (max-width: 580px) {
+			margin-top: -360px;
+		}
+		img {
+			@media screen and (min-width: 1400px) {
+				max-width: 120%;
+    			margin-left: -80px;
+			}
+		}
+		
 	}
 }

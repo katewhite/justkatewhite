@@ -1,0 +1,21 @@
+.visual-details-container {
+	.columns {
+		&:first-child {
+			text-align: left;
+			@include breakpoint(small down) {
+				text-align: center;
+				margin-bottom: 30px;
+			}
+		}
+		&:last-child {
+			text-align: right;
+			@include breakpoint(small down) {
+				text-align: center;
+			}
+		}
+	}
+	img {
+		border-radius: 10px;
+		max-height: 223px;
+	}
+}
