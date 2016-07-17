@@ -128,7 +128,6 @@
 					{ "type": "content", "id": "aventura-9" },
 					{ "type": "content", "id": "aventura-10" },
 					{ "type": "content", "id": "aventura-11" },
-					{ "type": "content", "id": "aventura-12" },
 					{ "type": "content", "id": "aventura-13" },
 					{ "type": "content", "id": "aventura-14" },
 					{ "type": "content", "id": "aventura-15" },
@@ -589,24 +588,19 @@
 		}
 	},{
 		"type": "content",
-		"id": "aventura-12",
-		"attributes": {
-			"content-type": "image",
-			"content": "<gif of hover states>"
-		}
-	},{
-		"type": "content",
 		"id": "aventura-13",
 		"attributes": {
 			"content-type": "body",
-			"content": "For future versions of the screens, it would be beneficial to calculate contrast for administrators as they set colors.  This way, it would notify the administrator if they chose foreground and background colors with less contrast than the standards recommend.  For now, we are still at the mercy of the administrator having a good eye for color combinations, or guidance through the hospital brand."
+			"content": "For future versions of the screens, it would be beneficial to calculate contrast for administrators as they set colors.  This way, it would notify the administrator if they chose foreground and background colors with less contrast than the standards recommend.  For now, we are still at the mercy of the administrator having a good eye for color combinations, or guidance through the hospital brand.",
+			"class": "second-body"
 		}
 	},{
 		"type": "content",
 		"id": "aventura-14",
 		"attributes": {
 			"content-type": "body",
-			"content": "The final challenge was ensuring that the logo placement and size constraints allowed for the majority of hospital logos to fit in the allowed space.  I was able to decide on size maximums and minimums by evaluating a number of our current customer’s logos.  Paying close attention to spacing around the logo, every logo we tried worked well with the sizing constraints in place.  I made sure to evaluate screens with light and dark background, as well as with jags (white backgrounds) and png files."
+			"content": "The final challenge was ensuring that the logo placement and size constraints allowed for the majority of hospital logos to fit in the allowed space.  I was able to decide on size maximums and minimums by evaluating a number of our current customer’s logos.  Paying close attention to spacing around the logo, every logo we tried worked well with the sizing constraints in place.  I made sure to evaluate screens with light and dark background, as well as with jags (white backgrounds) and png files.",
+			"class": "second-body"
 		}
 	},{
 		"type": "content",
@@ -628,7 +622,7 @@
 		"id": "aventura-17",
 		"attributes": {
 			"content-type": "body",
-			"content": "*******INSERT CONCLUSION************"
+			"content": "The small size of the screen is no indicator of its importance to the Aventura product.  As the primary screen visible to users, the improvements were paramount in giving the product a professional and polished face."
 		}
 	}]
 }

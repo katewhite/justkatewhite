@@ -7,10 +7,18 @@
 .screen-image-container {
 	&:first-child {
 		padding-right:10px;
+		@include breakpoint(small down) {
+			margin-bottom: 40px;
+			padding: 0px;
+		}
 	}
 	&:last-child {
 		padding-left: 10px;
-	}
+		@include breakpoint(small down) {
+			padding:0px;
+		}
+	}	
+	
 }
 .screen-label {
 	margin-top: 10px;

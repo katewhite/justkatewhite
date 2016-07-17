@@ -50,7 +50,10 @@
 	.banner-image {
 		margin-top: 170px;
 		@include breakpoint(small down) {
-			margin-top: 0px;
+			margin-top: -300px;
+		}
+		@media screen and (max-width: 580px) {
+			margin-top: -410px;
 		}
 	}
 }
