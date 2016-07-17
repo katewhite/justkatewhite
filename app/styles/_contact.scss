@@ -9,6 +9,18 @@
 		text-transform: lowercase;
 		margin-bottom: 30px;
 	    margin-left: -5px;
+	    margin-top: -95px;
+	    @media screen and (max-width: 723px) {
+	    	font-size: 3.375em;
+	    	margin-bottom: 10px;
+	    }
+	    @media screen and (max-width: 546px) {
+	    	font-size: 2em;
+	    	margin-bottom: 5px;
+	    }
+	}
+	.social-links {
+		margin-left: -5px;
 	}
 	.social-container {
 		a:first-child {
