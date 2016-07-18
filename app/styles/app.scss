@@ -92,18 +92,21 @@ section.content-section.banner {
      transition: all .7s ease;
     -webkit-transition: all .7s ease;
     -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
 }
 .loading-overlay {
 	opacity: 1;
 	transition: all .7s ease;
     -webkit-transition: all .7s ease;
     -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
 }
 .loading-overlay.hidden {
 	opacity: 0;
 	transition: all .7s ease;
     -webkit-transition: all .7s ease;
     -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
     z-index: -999;
 }
 body > .ember-view {

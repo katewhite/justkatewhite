@@ -41,7 +41,7 @@
 		display: inline-block;
 	}
 	.kate-white {
-		font-family: gibson;
+		font-family: 'Gibson', sans-serif;
 	    text-transform: lowercase;
 		font-weight: 600;
 		font-size: 26px;
@@ -65,6 +65,7 @@
 		transition: all .4s ease;
 	    -webkit-transition: all .4s ease;
 	    -moz-transition: all .4s ease;
+	    -ms-transition: all .4s ease;
 	    padding-bottom: 3px;
 	    border-bottom: 3px solid transparent;
 		&:hover {
