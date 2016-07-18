@@ -69,5 +69,8 @@
 		@media screen and (max-width: 1100px) {
 			margin-top: -170px;
 		}
+		@include breakpoint(small down) {
+			margin-top: 0px;
+		}
 	}
 }
