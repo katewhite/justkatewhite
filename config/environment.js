@@ -17,10 +17,10 @@ module.exports = function(environment) {
     // Set or update content security policies
     contentSecurityPolicy: {
       'font-src': "'self' data:",
-      'style-src': "'self' 'unsafe-inline' use.typekit.net p.typekit.net",
+      'style-src': "'self' 'unsafe-inline' use.typekit.net p.typekit.net performance.typekit.net",
       'img-src': "'self' ",
       'connect-src': "'self' ",
-      'script-src': "'self' 'unsafe-inline' use.typekit.net"
+      'script-src': "'self' 'unsafe-inline' use.typekit.net performance.typekit.net"
     },
 
     APP: {
