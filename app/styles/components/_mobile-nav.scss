@@ -78,7 +78,8 @@
 	    -ms-transition: all .5s ease;
 		a {
 			@include font-secondary-nav();
-			font-size: $font-medium;
+			font-size: $font-medium-phone;
+    		line-height: $line-height-medium-phone;
 			display: inline-block;
 			border-bottom: 0px;
 			&:hover {

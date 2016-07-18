@@ -12,7 +12,7 @@
 	.banner-title-container {
 		margin-top: 280px;
 		@include breakpoint(small down) {
-			margin-top: 260px;
+			margin-top: 300px;
 		}
 	}
 	.banner-image {
@@ -53,7 +53,7 @@
 			margin-top: -300px;
 		}
 		@media screen and (max-width: 580px) {
-			margin-top: -410px;
+			margin-top: -350px;
 		}
 	}
 }
