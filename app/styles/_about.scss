@@ -39,6 +39,16 @@
     text-transform: none;
     max-width: 70%;
 }
+.small-title {
+	margin-bottom: 40px;
+	@include breakpoint(small medium) {
+		margin-bottom: 20px;
+	}
+	@include breakpoint(small down) {
+		margin-bottom: 10px;
+	}
+    
+}
 .description {
 	@include font-body();
 }
@@ -112,6 +122,8 @@
 		display: block;
 	}
 }
+
+
 .state-container-h {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -137,9 +149,19 @@
 }
 .state-description-container-h {
     padding-left: 80px;
-    @include font-body();
+    // @include font-body();
     @include breakpoint(small down) {
 		padding-left: 0px;
 		max-width: 500px;
+	}
+	// .state-title-h {
+	// 	margin-bottom: 20px;
+	// 	@include breakpoint(small down) {
+	// 		margin-bottom: 10px;
+	// 	}
+	    
+	// }
+	.state-description-h {
+		@include font-body();
 	}
 }

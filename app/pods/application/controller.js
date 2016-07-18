@@ -18,6 +18,9 @@ export default Ember.Controller.extend({
 			$('#main-nav').removeClass('animated fadeInDown').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
       			$(this).removeClass('animated fadeInDown');
 			});
+			$('#mobile-nav').removeClass('animated fadeInDown').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      			$(this).removeClass('animated fadeInDown');
+			});
 
 			// PROJECT CONTENT ANIMATIONS ON SCROLL
 			this.get('sr').reveal('.project-body, .project-header, .project-component', { duration: 1500, viewFactor: 0.3 });
