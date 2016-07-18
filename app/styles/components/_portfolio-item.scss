@@ -57,14 +57,10 @@
 }
 
 .enigami-portfolio-item {
-	max-height: 500px;
-	.portfolio-item-image-container {
-		margin-top: 400px;
-		@include breakpoint(large down) { 
-			margin-top: 250px;
-		}
+	.portfolio-item-text-container {
+		margin-top: -27%;
 		@include breakpoint(small down) { 
-			margin-top: 70px;
+			margin-top: 0px;
 		}
 	}
 }
