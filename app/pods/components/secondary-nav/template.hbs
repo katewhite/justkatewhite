@@ -1,10 +1,11 @@
-
-	{{#each model as |currentProject|}}
+{{#each model as |project|}}
+	{{#if (not-current-project currentProject project)}}
 		<div class="secondary-nav-item-container">
-			{{#link-to "project" currentProject.id}}
-				{{currentProject.name}}
+			{{#link-to "project" project.id}}
+				{{project.name}}
 				{{svg-arrow}}
 			{{/link-to}}
 		</div>
-	{{/each}}
+	{{/if}}
+{{/each}}
 
