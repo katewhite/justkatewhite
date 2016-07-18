@@ -48,14 +48,17 @@
 	text-align: left;
     margin-top: 0px;
     line-height: 1.25em;
-    @media screen and (max-width: 723px) {
-    	font-size: 3.375em;
-    	margin-bottom: 10px;
+    @include breakpoint(small down) {
+    	font-size: 10vw;
     }
-    @media screen and (max-width: 546px) {
-    	font-size: $font-medium-large;
-    	margin-bottom: 5px;
-    }
+    // @media screen and (max-width: 723px) {
+    // 	font-size: 3.375em;
+    // 	margin-bottom: 10px;
+    // }
+    // @media screen and (max-width: 546px) {
+    // 	font-size: $font-medium-large;
+    // 	margin-bottom: 5px;
+    // }
 }
 .subtitle-text {
 	@media screen and (max-width: 723px) {
