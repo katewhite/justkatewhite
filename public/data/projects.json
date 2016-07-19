@@ -218,7 +218,9 @@
 		"attributes": {
 			"content-type": "image",
 			"content": "/assets/images/enigami-createaccount.jpg",
-			"class": "enigami-create-account"
+			"class": "enigami-create-account",
+			"srcset": "/assets/images/enigami-createaccount.jpg 1440w, /assets/images/enigami-createaccount-medium.jpg 1100w, /assets/images/enigami-createaccount-small.jpg 750w",
+			"sizes": "100%"
 		}
 	},{
 		"type": "content",
@@ -238,8 +240,8 @@
 		"type": "content",
 		"id": "enigami-13",
 		"attributes": {
-			"content-type": "image",
-			"content": "/assets/images/enigami-workflowcomparison.jpg"
+			"content-type": "component",
+			"content": "enigami-workflow-comparison"
 		}
 	},{
 		"type": "content",
@@ -260,7 +262,9 @@
 		"id": "enigami-16",
 		"attributes": {
 			"content-type": "image",
-			"content": "/assets/images/enigami-responsive.jpg"
+			"content": "/assets/images/enigami-responsive.jpg",
+			"srcset": "/assets/images/enigami-responsive.jpg 1187w, /assets/images/enigami-responsive-medium.jpg 950w, /assets/images/enigami-responsive-small.jpg 750w",
+			"sizes": "100%"
 		}
 	},{
 		"type": "content",

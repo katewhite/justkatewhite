@@ -6,6 +6,8 @@ export default Model.extend({
 	contentType: attr(),
 	content: attr(),
 	class: attr(),
+	srcset: attr(),
+	sizes: attr(),
 	project: belongsTo('project'),
 
 	// Computed
