@@ -8,6 +8,9 @@
 	background-image: url('images/kate-aboutmephoto.jpg');
 	background-position: right;
 	padding-top: 120px;
+	@include breakpoint(small down) {
+		background-image: url('images/kate-aboutmephoto-mobile.jpg');
+	}
 }
 .main-banner.about .headline-text {
 	text-transform: none;

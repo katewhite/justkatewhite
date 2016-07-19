@@ -38,6 +38,7 @@ h1, h2, h3 {
 }
 h1 {
 	@include font-title();
+	margin-left: -2px;
 }
 h2 {
 	@include font-subtitle();
