@@ -86,9 +86,7 @@
 			"thumbnail-image": "assets/images/tapigo-phones.jpg",
 			"thumbnail-image-srcset": "assets/images/tapigo-phones.jpg 1800w, assets/images/tapigo-phones_medium.jpg 1100w, assets/images/tapigo-phones_small.jpg 750w",
 			"thumbnail-image-sizes": "58.33%, (max-width: 900px) 100%",
-			"banner-image": "assets/images/tapigologo-gray.svg",
-			"banner-image-srcset": "assets/images/tapigologo-gray.jpg 1800w, assets/images/tapigologo-gray_medium.jpg 1100w, assets/images/tapigologo-gray_small.jpg 750w",
-			"banner-image-sizes": "100%, (max-width: 900px) 100%"
+			"banner-image": "assets/images/tapigologo-gray.svg"
 		},
 		"relationships": {
 			"contents": {
