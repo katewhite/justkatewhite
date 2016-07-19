@@ -23,6 +23,12 @@ module.exports = function(environment) {
       'script-src': "'self' 'unsafe-inline' use.typekit.net performance.typekit.net"
     },
 
+    // webFontConfig: {
+    //     typekit: {
+    //         id: 'yvu8mhq'
+    //     }
+    // },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

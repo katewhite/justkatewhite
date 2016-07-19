@@ -55,7 +55,7 @@
 }
 
 .loading-overlay {
-	position: absolute;
+	position: fixed;
   top: 0px;
   bottom: 0px;
   right: 0px;
@@ -65,10 +65,12 @@
 }
 #loader {
   position: absolute;
-  margin-top: 25%;
-  top: -16px;
-  margin-left: 50%;
-  left: -16px;
+  margin-top: 50vh;
+  top: -50px;
+  margin-left: 50vw;
+  left: -32px;
+  height: 64px;
+  width: 64px;
 	.rect {
 		background:#97c1c9;
 		border:1px solid #97c1c9;

@@ -30,6 +30,7 @@ export default Ember.Mixin.create({
 		console.log("checking for images loaded: " + eventName);
 		var self = this;
 		$('.load-image').imagesLoaded({ background: true })
+		// Use 'always' as a fail-safe.  Still want to show the rest of the site, even if just one image did not load.
 		.always( function( instance ) {
 			self.setImagesLoaded(true);
 			console.log('all images loaded');

@@ -1,10 +1,19 @@
 export default Ember.Controller.extend({
+	sr: ScrollReveal(),
 	timeoutComplete: false,
 	imagesLoaded: false,
-	sr: ScrollReveal(),
+	firstTimeLoad: true,
+	showIndicator: false,
 	showOverlay: Ember.computed('timeoutComplete', 'imagesLoaded', function() {
-		if (!this.get('timeoutComplete') || !this.get('imagesLoaded')) {
-			$('body').fadeTo(0, 0);
+		if (this.get('timeoutComplete') && !this.get('imagesLoaded')) {
+			this.set('showIndicator', true);
+			$('body').fadeTo(0, 1);
+			return true;
+		}
+		else if (!this.get('timeoutComplete') || !this.get('imagesLoaded')) {
+			if (!this.get('firstTimeLoad')) {
+				$('body').fadeTo(0, 0);
+			}
 			return true;
 		}
 		else {
@@ -35,9 +44,10 @@ export default Ember.Controller.extend({
 			        $('.header-container').removeClass('fixed');
 			    }
 			});
-
+			this.set('showIndicator', false);
+			this.set('firstTimeLoad', false);
 			// FADE BODY IN AND OUT ON TRANSITIONS
-			$('body').fadeTo(0, 1);
+			setTimeout(function() { $('body').fadeTo(0, 1) }, 250);
 
 			return false;
 		};

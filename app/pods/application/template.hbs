@@ -1,5 +1,13 @@
 <div class="loading-overlay {{if showOverlay 'visible' 'hidden'}}">
-	{{loading-overlay}}
+	{{#loading-overlay}}
+		{{#if showIndicator}}
+			<div id="loader">
+			  <div class="rect"></div>
+			  <div class="rect"></div>
+			  <div class="rect"></div>
+			</div>
+		{{/if}}
+	{{/loading-overlay}}
 </div>
 <section>
 	{{main-nav}}

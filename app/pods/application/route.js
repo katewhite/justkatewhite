@@ -5,5 +5,9 @@ import ResetScroll from 'justkatewhite/mixins/reset-scroll';
 export default Ember.Route.extend(ResetScroll, HandleOnLoad, {
 	model: function() {
 		return this.store.findAll('project');
-	}
+	},
+	handleActivate: function() {
+		let appController = this.controllerFor('application');
+		appController.set('firstTimeLoad', true);
+	}.on('activate')
 });
