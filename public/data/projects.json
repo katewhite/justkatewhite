@@ -45,6 +45,8 @@
 			"description": "Spigot Labs allows vendors and attendees of conferences and festivals to track who they met or what they tasted.",
 			"subtitle":  "Design • Development • Ember JS • SASS",
 			"thumbnail-image": "assets/images/spigot-macbook.jpg",
+			"thumbnail-image-srcset": "assets/images/spigot-macbook.jpg 1800w, assets/images/spigot-macbook_medium.jpg 1100w, assets/images/spigot-macbook_small.jpg 750w",
+			"thumbnail-image-sizes": "58.33%, (max-width: 900px) 100%",
 			"banner-image": "assets/images/spigotlogo-gray.png"
 		},
 		"relationships": {
@@ -80,6 +82,8 @@
 			"description": "Suite of mobile applications specifically designed for the residential and commercial irrigation maintenance process.",
 			"subtitle":  "Mobile Applications • Sencha Touch • SASS",
 			"thumbnail-image": "assets/images/tapigo-phones.jpg",
+			"thumbnail-image-srcset": "assets/images/tapigo-macbook.jpg 1800w, assets/images/tapigo-macbook_medium.jpg 1100w, assets/images/tapigo-macbook_small.jpg 750w",
+			"thumbnail-image-sizes": "58.33%, (max-width: 900px) 100%",
 			"banner-image": "assets/images/tapigologo-gray.png"
 		},
 		"relationships": {
