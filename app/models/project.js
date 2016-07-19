@@ -11,5 +11,7 @@ export default Model.extend({
 	thumbnailImageSrcset: attr(),
 	thumbnailImageSizes: attr(),
 	bannerImage: attr(),
+	bannerImageSrcset: attr(),
+	bannerImageSizes: attr(),
 	contents: hasMany('content')
 });
