@@ -111,7 +111,9 @@
 			"thumbnail-subtitle": "Desktop Security Application",
 			"description": "Aventura leverages situational awareness to deliver a highly secure, personalized clinical desktop with single sign on technology.",
 			"subtitle":  "Design • Development • Desktop Application • QML",
-			"thumbnail-image": "assets/images/aventura-imac.jpg",
+			"thumbnail-image": "",
+			"thumbnail-image-srcset": "assets/images/aventura-imac.jpg 2010w, assets/images/aventura-imac_medium.jpg 1300w, assets/images/aventura-imac_small.jpg 900w",
+			"thumbnail-image-sizes": "58.33%, (max-width: 900px) 100%",
 			"banner-image": "assets/images/aventuralogo-gray.png"
 		},
 		"relationships": {
