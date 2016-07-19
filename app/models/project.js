@@ -8,8 +8,6 @@ export default Model.extend({
 	description: attr(),
 	subtitle: attr(),
 	thumbnailImage: attr(),
-	thumbnailImageSrcset: attr(),
-	thumbnailImageSizes: attr(),
 	bannerImage: attr(),
 	contents: hasMany('content')
 });
