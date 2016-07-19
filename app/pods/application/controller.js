@@ -4,13 +4,14 @@ export default Ember.Controller.extend({
 	imagesLoaded: false,
 	firstTimeLoad: true,
 	showIndicator: false,
-	showOverlay: Ember.computed('timeoutComplete', 'imagesLoaded', function() {
-		if (this.get('timeoutComplete') && !this.get('imagesLoaded')) {
-			this.set('showIndicator', true);
-			$('body').fadeTo(0, 1);
-			return true;
-		}
-		else if (!this.get('timeoutComplete') || !this.get('imagesLoaded')) {
+	currentImageCount: 0,
+	showOverlay: Ember.computed('timeoutComplete', function() {
+		// if (this.get('timeoutComplete')) {
+		// 	this.set('showIndicator', true);
+		// 	$('body').fadeTo(0, 1);
+		// 	return true;
+		// }
+		if (!this.get('timeoutComplete')) {
 			if (!this.get('firstTimeLoad')) {
 				$('body').fadeTo(0, 0);
 			}

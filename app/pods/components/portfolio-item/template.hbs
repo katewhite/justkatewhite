@@ -11,8 +11,9 @@
 				{{/link-to}}
 			</div>
 		</div>
-		<div class="columns small-12 medium-7 portfolio-item-image-container load-image">
-			<img class="{{model.name}}" src="{{model.thumbnailImage}}">
+		<div class="columns small-12 medium-7 portfolio-item-image-container">
+			<!-- {{img-with-load class=model.name src=model.thumbnailImage srcSet=model.thumbnailImageSrcset sizes=model.thumbnailImageSizes}} -->
+			<img class="{{model.name}} load-image" src="{{model.thumbnailImage}}" srcset="{{model.thumbnailImageSrcset}}" sizes="{{model.thumbnailImageSizes}}">
 		</div>
 	</div>
 </section>

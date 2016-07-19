@@ -45,6 +45,7 @@
 }
 .portfolio-item-image-container {
 	text-align: center;
+	position: relative;
 	img.enigami {
 		max-width: 650px;
 	}
@@ -53,6 +54,10 @@
 	}
 	img {
 		width: 100%;
+		// opacity: 0;
+	}
+	img.loaded {
+		opacity: 1;
 	}
 	@include breakpoint(small down) { 
 		margin-top: 70px;

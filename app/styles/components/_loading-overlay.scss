@@ -95,4 +95,21 @@
 	}
 }
 
+.loading-image-container {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: $gray-10;
+  opacity: 1;
+  transition: all .75s ease;
+  -webkit-transition: all .75s ease;
+  -moz-transition: all .75s ease;
+  -ms-transition: all .75s ease;
+}
+.loading-image-container.loaded {
+  opacity: 0;
+}
+
 

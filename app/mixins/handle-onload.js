@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Mixin.create({
+	totalImageCount: 0,
 	actions: {
 		// Have to handle willTransition as well for the case when we are switching between projects.
 		// Switching from project/spigot to project/tapigo does not throw the activate event.
@@ -9,52 +10,52 @@ export default Ember.Mixin.create({
 			var self = this;
 			// Reset values so we see the overlay everytime
 			this.setTimeoutComplete(false);
-			this.setImagesLoaded(false);
+			// this.setImagesLoaded(false);
 			// Show the overlay for a minimum of 2 seconds to avoid skippy-ness
 			setTimeout(function() { self.setTimeoutComplete(true) }, 1000);
-			Ember.run.schedule('afterRender', this, function () {
-		    	this.handleAfterRender();
-		    });
+			// Ember.run.schedule('afterRender', this, function () {
+		 //    	this.handleAfterRender();
+		 //    });
 		}
 	},
 
-	handleActivate: function() {
-		var self = this;
-		setTimeout(function() { self.setTimeoutComplete(true) }, 2000);
-		Ember.run.schedule('afterRender', this, function () {
-	    	this.handleAfterRender();
-	    });
-	}.on('activate'),
+	// checkForImagesLoaded: function(eventName) {
+	// 	console.log("checking for images loaded: " + eventName);
+	// 	var self = this;
+	// 	// let imgCount = 0;
+	// 	// setTimeout(function() {
+	// 	// 	self.set('totalImageCount', $('.load-image').length);
+	// 	// 	console.log('totalImage count = ' + self.get('totalImageCount'));
+	// 	// 	$('.load-image').load(function( instance, image ) {
+	// 	// 		self.set('totalImageCount', $('.load-image').length);
+	// 	// 		console.log('totalImage count = ' + self.get('totalImageCount'));
+	// 	// 		let appController = self.controllerFor('application');
+	// 	// 		appController.incrementProperty('currentImageCount');
+	// 	// 		console.log(instance.target.currentSrc + " | " + " currentImageCount = " + appController.get('currentImageCount') + " totalImageCount = " + self.get('totalImageCount'));
+	// 	// 		if (appController.get('currentImageCount') >= self.get('totalImageCount')) {
+	// 	// 			self.setImagesLoaded(true);
+	// 	// 			console.log('all images loaded');
+	// 	// 		}
+	// 	// 	}).error(function() {
+	// 	// 		console.error('ERROR LOADING IMAGES');
+	// 	// 		// Fail-safe.  Still go ahead and show page
+	// 	// 		self.setImagesLoaded(true);
+	// 	// 	});
+	// 	// }, 2000);
+	// 	self.setImagesLoaded(true);
+	// },
 
-	checkForImagesLoaded: function(eventName) {
-		console.log("checking for images loaded: " + eventName);
-		var self = this;
-		$('.load-image').imagesLoaded({ background: true })
-		// Use 'always' as a fail-safe.  Still want to show the rest of the site, even if just one image did not load.
-		.always( function( instance ) {
-			self.setImagesLoaded(true);
-			console.log('all images loaded');
-		})
-		.fail( function() {
-			console.log('all images loaded, at least one is broken');
-		})
-		.progress( function( instance, image ) {
-			var result = image.isLoaded ? 'loaded' : 'broken';
-			console.log( 'image is ' + result + ' for ' + image.img.src );
-		});
-	},
-
-	setImagesLoaded: function(value) {
-		let appController = this.controllerFor('application');
-		appController.set('imagesLoaded', value);
-	},
+	// setImagesLoaded: function(value) {
+	// 	let appController = this.controllerFor('application');
+	// 	appController.set('imagesLoaded', value);
+	// },
 
 	setTimeoutComplete: function(value) {
 		let appController = this.controllerFor('application');
 		appController.set('timeoutComplete', value);
 	},
 
-	handleAfterRender: function() {
-		this.checkForImagesLoaded("afterRender");
-	}
+	// handleAfterRender: function() {
+	// 	this.checkForImagesLoaded("afterRender");
+	// }
 });

@@ -8,6 +8,8 @@
 			"description": "Web application designed for quick data entry for tracking symptoms based on a given condition.",
 			"subtitle":  "Responsive Design • Development • Bootstrap • LESS",
 			"thumbnail-image": "assets/images/enigami-ipad.jpg",
+			"thumbnail-image-srcset": "assets/images/enigami-ipad.jpg 1500w, assets/images/enigami-ipad_medium.jpg 950w, assets/images/enigami-ipad_small.jpg 700w",
+			"thumbnail-image-sizes": "58.33%, (max-width: 900px) 100%",
 			"banner-image": "assets/images/enigamilogo-gray.png"
 		},
 		"relationships": {
@@ -111,7 +113,9 @@
 			"thumbnail-subtitle": "Desktop Security Application",
 			"description": "Aventura leverages situational awareness to deliver a highly secure, personalized clinical desktop with single sign on technology.",
 			"subtitle":  "Design • Development • Desktop Application • QML",
-			"thumbnail-image": "",
+			"thumbnail-image": "assets/images/aventura-imac.jpg",
+			"thumbnail-image-srcset": "assets/images/aventura-imac.jpg 2010w, assets/images/aventura-imac_medium.jpg 1300w, assets/images/aventura-imac_small.jpg 900w",
+			"thumbnail-image-sizes": "58.33%, (max-width: 900px) 100%",
 			"banner-image": "assets/images/aventuralogo-gray.png"
 		},
 		"relationships": {

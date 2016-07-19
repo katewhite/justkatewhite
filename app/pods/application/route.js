@@ -9,5 +9,10 @@ export default Ember.Route.extend(ResetScroll, HandleOnLoad, {
 	handleActivate: function() {
 		let appController = this.controllerFor('application');
 		appController.set('firstTimeLoad', true);
+		var self = this;
+		setTimeout(function() { self.setTimeoutComplete(true) }, 2000);
+		// Ember.run.schedule('afterRender', this, function () {
+	 //    	this.handleAfterRender();
+	 //    });
 	}.on('activate')
 });
