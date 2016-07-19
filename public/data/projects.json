@@ -82,7 +82,7 @@
 			"description": "Suite of mobile applications specifically designed for the residential and commercial irrigation maintenance process.",
 			"subtitle":  "Mobile Applications • Sencha Touch • SASS",
 			"thumbnail-image": "assets/images/tapigo-phones.jpg",
-			"thumbnail-image-srcset": "assets/images/tapigo-macbook.jpg 1800w, assets/images/tapigo-macbook_medium.jpg 1100w, assets/images/tapigo-macbook_small.jpg 750w",
+			"thumbnail-image-srcset": "assets/images/tapigo-phones.jpg 1800w, assets/images/tapigo-phones_medium.jpg 1100w, assets/images/tapigo-phones_small.jpg 750w",
 			"thumbnail-image-sizes": "58.33%, (max-width: 900px) 100%",
 			"banner-image": "assets/images/tapigologo-gray.png"
 		},
