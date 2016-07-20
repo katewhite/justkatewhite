@@ -10,6 +10,7 @@
   "devDependencies": {
     "scrollreveal": "^3.2.0",
     "foundation-sites": "^6.2.3",
-    "picturefill": "^3.0.2"
+    "picturefill": "^3.0.2",
+    "waypoints": "^4.0.0"
   }
 }
