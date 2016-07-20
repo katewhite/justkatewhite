@@ -21,7 +21,10 @@
 	
 }
 .screen-label {
-	margin-top: 10px;
+    margin-bottom: 5px;
+    @include font-nav();
+    font-size: 16px;
+    color: $gray-100;
 }
 .customer-screens {
 	border-radius: 10px;
