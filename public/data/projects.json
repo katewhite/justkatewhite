@@ -353,7 +353,10 @@
 		"id": "spigot-11",
 		"attributes": {
 			"content-type": "image",
-			"content": "/assets/images/spigot-colorstypography.png"
+			"content": "/assets/images/spigot-colorstypography.jpg",
+			"class": "spigot-styleguide",
+			"srcset": "/assets/images/spigot-colorstypography.jpg 2040w, /assets/images/spigot-colorstypography-medium.jpg 1400w, /assets/images/spigot-colorstypography-small.jpg 750w",
+			"sizes": "100%"
 		}
 	},{
 		"type": "content",
@@ -367,7 +370,10 @@
 		"id": "spigot-13",
 		"attributes": {
 			"content-type": "image",
-			"content": "/assets/images/spigot-fontstyles.png"
+			"content": "/assets/images/spigot-fontstyles.jpg",
+			"class": "spigot-styleguide",
+			"srcset": "/assets/images/spigot-fontstyles.jpg 2040w, /assets/images/spigot-fontstyles-medium.jpg 1400w, /assets/images/spigot-fontstyles-small.jpg 750w",
+			"sizes": "100%"
 		}
 	},{
 		"type": "content",
@@ -381,7 +387,10 @@
 		"id": "spigot-15",
 		"attributes": {
 			"content-type": "image",
-			"content": "/assets/images/spigot-components.png"
+			"content": "/assets/images/spigot-components.png",
+			"class": "spigot-styleguide",
+			"srcset": "/assets/images/spigot-components.jpg 2040w, /assets/images/spigot-components-medium.jpg 1400w, /assets/images/spigot-components-small.jpg 750w",
+			"sizes": "100%"
 		}
 	},{
 		"type": "content",
@@ -402,7 +411,9 @@
 		"id": "spigot-18",
 		"attributes": {
 			"content-type": "image",
-			"content": "/assets/images/spigot-flatbrowser.png"
+			"content": "/assets/images/spigot-flatbrowser.jpg",
+			"srcset": "/assets/images/spigot-flatbrowser.jpg 2040w, /assets/images/spigot-flatbrowser-medium.jpg 1400w, /assets/images/spigot-flatbrowser-small.jpg 750w",
+			"sizes": "100%"
 		}
 	},{
 		"type": "content",
