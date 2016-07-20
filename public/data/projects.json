@@ -138,7 +138,6 @@
 					{ "type": "content", "id": "aventura-9" },
 					{ "type": "content", "id": "aventura-10" },
 					{ "type": "content", "id": "aventura-11" },
-					{ "type": "content", "id": "aventura-13" },
 					{ "type": "content", "id": "aventura-14" },
 					{ "type": "content", "id": "aventura-15" },
 					{ "type": "content", "id": "aventura-16" },
@@ -152,7 +151,7 @@
 		"id": "enigami-1",
 		"attributes": {
 			"content-type": "body",
-			"content": "Enigami Systems is a healthcare IT company that delivers a SaaS product for collecting data concerning symptoms for a given condition.  With this data, they are able to provide information about the most effective treatments."
+			"content": "Enigami Systems is a healthcare IT company that delivers a SaaS product for collecting data about symptoms for a given condition and provides information about the most effective treatments."
 		}
 	},{
 		"type": "content",
@@ -166,7 +165,7 @@
 		"id": "enigami-3",
 		"attributes": {
 			"content-type": "body",
-			"content": "Enigami needed a web-based application that would provide a dashboard and journaling system for patients to enter and track symptoms on a day-to-day basis.  The dashboard followed a step-by-step wizard format making data entry as straight forward as possible for the users.  The project included a registration process as well."
+			"content": "Enigami needed a web-based application that provided a dashboard and journaling system for patients to enter and track symptoms on a day-to-day basis.  The dashboard followed a step-by-step wizard format making data entry as easy as possible for the users."
 		}
 	},{
 		"type": "content",
@@ -194,7 +193,7 @@
 		"id": "enigami-7",
 		"attributes": {
 			"content-type": "body",
-			"content": "Using the logo colors as a guide, I wanted to stick to the subtle and light feeling the color palette gave the brand.  Since the logo was navy (edging close to purple), I selected grays with more blue and purple in them to keep the mood of the application cool.  I added 3 accent colors: green for buttons, yellow for small highlighted items, and red for error messaging.  I made sure to keep these muted in tone as well to ensure they did not clash with the subtle purple-grays."
+			"content": "Using the logos as a guide, I wanted to stick to the light feeling the color palette gave the brand.  Since the logo was navy (edging close to purple), I selected grays with more blue and purple in them to keep the mood of the application cool.  I added 3 accent colors: green for buttons, yellow for small highlighted items, and red for error messaging.  I made sure to keep these muted in tone as well to ensure they did not clash with the subtle purple-grays."
 		}
 	},{
 		"type": "content",
@@ -208,7 +207,7 @@
 		"id": "enigami-9",
 		"attributes": {
 			"content-type": "body",
-			"content": "The other area of the design that I paid close attention to was spacing.  With the application being one that users should interact with on a daily basis, I wanted it to be as non-overwhelming as possible.  Exaggerated spacing between elements and large controls helped to accomplish a more basic look and feel."
+			"content": "The other area of the design that I paid close attention to was spacing.  Because users should interact with the application on a daily basis, I wanted it to be as simple as possible.  Exaggerated spacing between elements and large controls helped to accomplish a more basic look and feel."
 		}
 	},{
 		"type": "content",
@@ -232,7 +231,7 @@
 		"id": "enigami-12",
 		"attributes": {
 			"content-type": "body",
-			"content": "At the start of the project, the founders provided a few wireframes demonstrating some of the workflows they worked through for the application.  The entry of conditions and their associated symptoms required a number of unnecessary steps for the user.  I was able to suggest a few changes to the workflow that shortened the process by 3 steps and made the steps more understandable.  I simplified the main page by presenting only a list of all added conditions and a button to add more.  Clicking to add the condition presents a modal where the user selects the condition and the symptoms.  With this modification, the modal becomes the only edit state, with 2 distinct actions as opposed to the inline-edit presented in the first option."
+			"content": "At the start of the project, the founders provided a few wireframes demonstrating some of the workflows they worked through for the application.  The entry of conditions and their associated symptoms required a number of unnecessary steps for the user.  I was able to suggest a few changes to the workflow that shortened the process by 3 steps and made the steps more understandable.  I simplified the main page by presenting only a list of all added conditions and a button to add more.  Clicking to add the condition presents a modal where the user selects the condition and the symptoms.  With this modification, the modal becomes the only “edit” state, with 2 distinct actions as opposed to the inline-edit presented in the first option."
 		}
 	},{
 		"type": "content",
@@ -253,7 +252,7 @@
 		"id": "enigami-15",
 		"attributes": {
 			"content-type": "body",
-			"content": "To encourage daily use of the application, it was important that the app be usable on a mobile device as well.  While I did not take a true mobile-first approach to this particular project, I did design the layout with mobile devices in mind.  This was fairly straight-forward for the sign up pages that just had one column of controls.  For the dashboard, however, a two-column layout was selected to allow for an easy stacked concept on mobile.  With the help of the Bootstrap grid and SASS media queries, I implemented the front-end to be fully responsive."
+			"content": "It was important that the app be usable on a mobile device o encourage daily use of the application, .  While I did not take a true mobile-first approach to this particular project, I did design the layout with mobile devices in mind.  This was fairly easy for the sign up pages that just had one column of controls.  I selected a two-column layout for the dashboard to allow for a basic stacked concept on mobile.  With the help of the Bootstrap grid and SASS media queries, I implemented the front-end to be fully responsive."
 		}
 	},{
 		"type": "content",
@@ -283,7 +282,7 @@
 		"id": "spigot-1",
 		"attributes": {
 			"content-type": "body",
-			"content": "Spigot Labs allows vendors and attendees of conferences and festivals to track who they met or what they tasted.  I designed and developed the front-end of the dashboard application."
+			"content": "Spigot Labs allows vendors and attendees of conferences and festivals to track people they meet or food they taste.  I designed and developed the front-end of the dashboard application."
 		}
 	},{
 		"type": "content",
@@ -297,7 +296,7 @@
 		"id": "spigot-3",
 		"attributes": {
 			"content-type": "body",
-			"content": "The Spigot Labs dashboard application is used by both vendors and attendees of an event.  While the Spigot Labs product is dynamic enough to be used with any type of event, the most common use-cases are job fairs, beer festivals, and corporate conferences.  The first event to utilize this dashboard was a “speed interviewing” event.  At the event, each interviewee had about 3 minutes to speak with each interviewer before moving on to the next.  As such, it was important that as little time as possible was taken up with introductions and basic bio information sharing.  With Spigot Labs, the interviewees were able to tap their badge at the station, at which point the interviewee had access to their general work information as well as any other links the attendee provided in their profile.  The other main goal of the dashboard was to serve as a location for interviewers to record notes on each interviewee."
+			"content": "The Spigot Labs dashboard application is used by both vendors and attendees of an event.  While the Spigot Labs product is dynamic enough to be used with any type of event, the most common use-cases are job fairs, beer festivals, and corporate conferences.  The first event to utilize this dashboard was a “speed interviewing” event.  At the event, each interviewee had about 3 minutes to speak with each interviewer before moving on to the next.  It was important that as little time as possible was taken up with introductions and basic bio information sharing.  The interviewees were able to tap their badge at the station, at which point they had access to their general work information as well as any other links they provided in their profile."
 		}
 	},{
 		"type": "content",
@@ -332,7 +331,7 @@
 		"id": "spigot-8",
 		"attributes": {
 			"content-type": "body",
-			"content": "While a fully responsive mobile site was not a requirement for this project, I designed it with the move to mobile in mind.  As such, I chose a three column approach which makes the hierarchy of events to attendees to the attendee details clear.  This will translate well on mobile as a drill-down affect from one screen to the next.  Further, for the desktop app, it was important to be able to flip from person to person quickly and see new entries added to the top of the list when a visitor taps their badge.  The full list of attendees always visible and central to the layout supports this requirement."
+			"content": "I designed the dashboard with the move to mobile in mind, though a fully responsive mobile site was not a requirement for this project.  I chose a three column approach which makes the hierarchy of events, attendees, and attendee details clear.  This will translate well on mobile as a drill-down effect from one screen to the next.  It was important to be able to flip from person to person quickly and see new entries added to the top of the list when a visitor tapped their badge.  To support this requirement, the list of attendees is always visible and central to the layout."
 		}
 	},{
 		"type": "content",
@@ -346,7 +345,7 @@
 		"id": "spigot-10",
 		"attributes": {
 			"content-type": "body",
-			"content": "Designing this app for the developer founder, I wanted to make the ability to add onto the site without bothering the styles as easy as possible.  With this styleguide, it’s easy to see each component of the site and what code was required to utilize them."
+			"content": "I wanted to make the maintenance of this app as easy as possible for the developer actively working on the site.  With a living styleguide, it’s easy to see each component of the site and what code is required to utilize them.  Changes and additions to the app are possible without bothering the styles."
 		}
 	},{
 		"type": "content",
@@ -363,7 +362,7 @@
 		"id": "spigot-12",
 		"attributes": {
 			"content-type": "body",
-			"content": "I created mixins for font sizes and styles.  This way, the SASS is far cleaner, and if they need to be changed at all, the change is required only in the mixin rather than through out the code."
+			"content": "I created mix-ins for font sizes and styles.  The SASS is far cleaner, and if needed, changes are required only in the mixin rather than throughout the code."
 		}
 	},{
 		"type": "content",
@@ -404,7 +403,7 @@
 		"id": "spigot-17",
 		"attributes": {
 			"content-type": "body",
-			"content": "The end result is a slick, polished dashboard with nice visual detail.  Users are able to view a large amount of connections on one screen and see the full hierarchy of events, attendees, and attendee details."
+			"content": "The end result is a polished dashboard with nice visual detail.  Users are able to view a large number of connections on one screen and see the full hierarchy of events, attendees, and attendee details."
 		}
 	},{
 		"type": "content",
@@ -420,7 +419,7 @@
 		"id": "tapigo-1",
 		"attributes": {
 			"content-type": "body",
-			"content": "Tapigo is a suite of mobile applications specifically designed for the residential and commercial irrigation maintenance process.  The name \"Tapigo\" was created from the combination of the three words \"tap\" - \"i\" - \"go\".  As such, a central focus of the apps is quick and focused data entry.  The mantra of the company founder was \"tap tap tap\" when describing how easy and seamless he envisioned the use of the apps.  As such, we spent a lot of time wire framing and prototyping user flows to ensure the use of the applications was both quick and simple."
+			"content": "Tapigo is a suite of mobile applications specifically designed for the residential and commercial irrigation maintenance process.  The name \"Tapigo\" was created from the combination of the three words \"tap\" - \"i\" - \"go\".  A central focus of the apps is quick data entry.  The mantra of the company founder is \"tap tap tap\" when describing how easy and seamless he envisioned the use of the apps.  So we spent a lot of time wire framing and prototyping user flows to ensure the use of the applications was both quick and simple."
 		}
 	},{
 		"type": "content",
@@ -434,7 +433,7 @@
 		"id": "tapigo-3",
 		"attributes": {
 			"content-type": "body",
-			"content": "The target market of the Tapigo applications is service providers, specifically irrigation maintenance crews for this use case.  As such, the goal was to create applications that could be used on the go for data entry for users who are not accustomed to using their phones for tasks like this.  One aim in particular was to limit the amount of free text entry in the application and instead present the user with tappable options that could be viewed and selected quickly while surveying, inspecting, or performing work on a property."
+			"content": "The target market of the Tapigo applications is service providers - specifically irrigation maintenance crews.  The goal was to create applications that are used \"on the go\" and for users who are not accustomed to using their phones for data entry.  One aim in particular was to limit the amount of free text entry in the application and instead present the user with tappable options that could be viewed and selected quickly while surveying, inspecting, or performing work on a property."
 		}
 	},{
 		"type": "content",
@@ -448,7 +447,7 @@
 		"id": "tapigo-5",
 		"attributes": {
 			"content-type": "body",
-			"content": "With a suite of applications intended to be used outdoors and on the go, it was critical that the visual design be simple, clean, and non-distracting to the user.  Legibility and simplicity were two of the main focuses.  When starting on the project, the branding and logo had been established.  The color palette had a natural, outdoors feel.  I selected the blue as the primary color in the palette, as it would stand out the most dramatically when used for controls, buttons, navigation items, and any other areas where small pops of color would be required.  All other colors in the palette were used more sparingly throughout the application in order to maintain the simplicity of the apps in the visual design as well.  I selected Open Sans as the typeface to use throughout the application.  The typeface has a professional feel while not being too stiff, serious, or corporate.  It was important with this mobile application that the text be legible in small sizes.  Open Sans certainly fit this requirement."
+			"content": "It was critical that the visual design be simple, clean, and non-distracting to the user because this suite of applications is intended to be used outdoors and \"on the go\".  The branding and logo had been established at the start of the project and the color palette had a natural, outdoorsy feel.  I selected the blue as the primary color, since it would stand out the most dramatically when used for controls, buttons, navigation items, and any other areas where small pops of color would be required.  All other colors in the palette were used more sparingly throughout the application in order to maintain the simplicity of the apps in the visual design as well.  I selected Open Sans as the typeface because it has a professional feel while not being too stiff, serious, or corporate.  It was important with this mobile application that the text be legible in small sizes and Open Sans fit this requirement."
 		}
 	},{
 		"type": "content",
@@ -469,7 +468,7 @@
 		"id": "tapigo-8",
 		"attributes": {
 			"content-type": "body",
-			"content": "Central to the product concept was the segmentation of functionality between multiple applications.  With this strategy, the thought was that the apps would be more usable with fewer features packed into each.  Further, if a particular role in the company never needed to view invoices, they would not need to download the ‘Invoice’ application at all.  This idea would give users a deeper knowledge of the functionality within the apps that they needed to use most often, and left anything they did not need out of the picture for them.  For this group of 5 different applications, we needed clear iconography to distinguish the different apps.  The company branding and logo uses thin, rounded lines, giving it a clean but fun look.  When considering the individual application icons, I wanted to keep this aesthetic consistent throughout each.  Using thin and rounded vectors, I created icons that clearly represented nouns associated with the verbs used for each application name."
+			"content": "Central to the product concept was the segmentation of functionality between multiple applications so that the apps would be more usable with fewer features packed into each.  For example, if a particular employee in the company never needed to view invoices, they would not need to download the ‘Invoice’ application at all.  For the suite of 5 different applications, we needed clear iconography to distinguish between the apps.  The company branding and logo uses thin, rounded lines, giving it a clean but fun look.  I wanted to keep this aesthetic consistent throughout each application icon.  I created icons that clearly represented nouns associated with the verbs used for each application name."
 		}
 	},{
 		"type": "content",
@@ -490,7 +489,7 @@
 		"id": "tapigo-11",
 		"attributes": {
 			"content-type": "body",
-			"content": "While the visual design of the applications was important to the founder and brand, we spent the majority of our time focused on the usability and ease of navigation throughout the applications.  With this, I had the opportunity to experiment with a number of methods and fidelity levels in wire framing and prototyping user workflows.  Throughout the project, I used sketches, low-fidelity wireframes, high-fidelity wireframes, and interactive prototypes to demonstrate workflows for iteration.  Sketching in Fifty Three’s paper app was a great way for me to present multiple different high-level concepts and get quick feedback on direction."
+			"content": "Though the visual design of the applications was important to the founder, we spent the majority of our time focused on the usability and ease of navigation through the applications.  I had the opportunity to experiment with a number of sketches, low-fidelity wireframes, high-fidelity wireframes, and interactive prototypes to demonstrate workflows for iteration.  Sketching in Fifty Three’s Paper app was a great way to present multiple high-level concepts and get quick feedback on direction."
 		}
 	},{
 		"type": "content",
@@ -506,7 +505,7 @@
 		"id": "tapigo-13",
 		"attributes": {
 			"content-type": "body",
-			"content": "I used low-fidelity wireframes later in the application design process, once we had distinguished a number of control and workflow patterns, but just needed to flesh out the exact user paths for one particular task.  This is one task for adding an asset in the application that had multiple paths the user could potentially go through.  I created this wireframe to allow the developers and founder to see each path and how they differ."
+			"content": "Once we had distinguished a number of control and workflow patterns through sketching, I used low-fidelity wireframes to help flesh out more specific tasks.  The image below shows the task for adding an asset in the application, which has multiple paths for the user.  I created this wireframe to allow the developers and founder to see each path and how they differ."
 		}
 	},{
 		"type": "content",
@@ -522,7 +521,7 @@
 		"id": "tapigo-17",
 		"attributes": {
 			"content-type": "body",
-			"content": "Finally, all of these static sketches and wireframes were certainly helpful in coming up with what we thought might be intuitive workflows for users to accomplish certain tasks in the applications.  However, we wouldn’t know for certain that flows were intuitive until we were able to try them ourselves.  I created prototypes using FluidUI that we could run on our devices for some of the tasks that would either become conventions, or that were particularly complicated.  Being able to tap around the app ourselves made gaps and short comings in the workflows far more obvious than just wireframes.  This allowed us to make tweaks where necessary prior to writing any code."
+			"content": "All of these static sketches and wireframes were helpful in designing what we thought might be intuitive workflows for users to accomplish certain tasks in the applications.  However, it was impossible to know for certain until we were able to interact with them ourselves.  I created prototypes using FluidUI.  The ability to tap around the app ourselves made gaps and shortcomings in the workflows far more obvious than just wireframes.  This allowed us to make tweaks where necessary prior to writing any code."
 		}
 	},{
 		"type": "content",
@@ -536,14 +535,14 @@
 		"id": "tapigo-20",
 		"attributes": {
 			"content-type": "body",
-			"content": "One of my favorite parts about working on this project was the attention to detail then entire team had when it came to intuitive workflows.  The founder and I spent hours sometimes discussing and iterating how to make one task as easy as possible for a user to accomplish.  This attention to detail and usability will absolutely make Tapigo and their apps successful in the future."
+			"content": "One of my favorite parts about working on this project was the attention to detail the team had when it came to intuitive workflows.  The founder and I spent hours discussing and iterating on how to make one task as easy as possible for a user to accomplish.  This attention to detail and usability will make Tapigo and their apps successful in the future."
 		}
 	},{
 		"type": "content",
 		"id": "aventura-1",
 		"attributes": {
 			"content-type": "body",
-			"content": "The Aventura security product aides in clinician workflows in a hospital setting by instantaneously securing and reconnecting desktop sessions with the tap of a badge.  As such, we have a splash screen display on the machine when it is secure.  While this project was small, it came with some unique constraints that were critical to work out to ensure that the screen visible on most machines in the hospital was professional and visually appealing."
+			"content": "The Aventura security product aids clinician workflows in a hospital setting by instantaneously securing and reconnecting desktop sessions with the tap of a badge.  Though the project was limited in scope, there were unique constraints critical to ensure that the visibility on most machines in the hospital was professional and visually appealing."
 		}
 	},{
 		"type": "content",
@@ -557,7 +556,7 @@
 		"id": "aventura-3",
 		"attributes": {
 			"content-type": "body",
-			"content": "The goal of this project was to replace legacy splash screens with something more modern.  Further, an added requirement was that customers have the ability to customize (white label) the screen with their organization’s colors and logo."
+			"content": "With Aventura, when a desktop is secure, a splash screen is presented to the user.  The goal of this project was to replace legacy splash screens with something more modern.  An additional requirement was that customers have the ability to customize (white label) the screen with their organization’s colors and logo."
 		}
 	},{
 		"type": "content",
@@ -571,7 +570,7 @@
 		"id": "aventura-5",
 		"attributes": {
 			"content-type": "body",
-			"content": "The original design of the screens was antiquated and blocky.  My focus for the updated screens was to give them a clean and professional feel.  The first area to tackle was the all caps, legacy font.  I replaced the font with Source Sans Pro, a thin and neat typeface, giving it a more polished look.  Removing the thick white borders, softening up all corners, thinning outlines, and adding spacing made for a far more legible and clean look and feel."
+			"content": "The original design of the screens was antiquated and blocky.  My focus for the updated screens was to give them a clean and professional feel.  The first area to tackle was the legacy font, displayed in all caps.  I replaced the font with Source Sans Pro, a thin and neat typeface, giving it a more polished look.  Removing the thick white borders, softening up all corners, thinning outlines, and adding spacing made for a far more legible and clean look and feel."
 		}
 	},{
 		"type": "content",
@@ -592,7 +591,7 @@
 		"id": "aventura-8",
 		"attributes": {
 			"content-type": "body",
-			"content": "The original splash screens had a number of usability issues.  Even though there are only a handful of controls on the form, the usability of the form is critical due to the amount of times clinicians interact with it in a given day.  Further, the Aventura product is driven by speed.  The login process needs to be as seamless as possible for clinicians.  As seen in the image of the original splash screen below, the color, sizing, and placement of the “Change Password” button proved to be a challenge for clinicians.  During one particular go-live, almost every nurse we observed clicked the “Change Password” button instead of “Connect”.  In the new screens, I made sure that the “Change Password” button looks like a secondary action by making it appear smaller and less prominent, adding the underline to make it clear that it is clickable."
+			"content": "The original splash screens had a number of usability issues, which were critical to address due to the amount of times clinicians interact with it everyday.  The Aventura product is driven by speed, so the login process needs to be as seamless as possible for clinicians.  As seen in the image of the original splash screen below, the color, sizing, and placement of the \"Change Password\" button proved to be a challenge for users.  During one particular go-live, most nurses we observed clicked \"Change Password\" instead of \"Connect.\"  I made sure that on the improved screen the \"Change Password\" button looks like a secondary action.  I made it appear smaller and less prominent, and added the underline to make it clear that it is clickable."
 		}
 	},{
 		"type": "content",
@@ -613,22 +612,14 @@
 		"id": "aventura-11",
 		"attributes": {
 			"content-type": "body",
-			"content": "The biggest challenge for this project from a design perspective was meeting the requirement indicating that administrators should be allowed to modify the colors and logo on the screen.  My goal was to limit the number of colors and settings an administrator could modify.  The more colors we allow the administrators to modify, the more possibility for awful and illegible combinations.  I was able to limit the number of colors that can be chosen to two: the text color and the background color.  In the design, I made use of opacity to establish typographical hierarchy, control states, and button states."
-		}
-	},{
-		"type": "content",
-		"id": "aventura-13",
-		"attributes": {
-			"content-type": "body",
-			"content": "For future versions of the screens, it would be beneficial to calculate contrast for administrators as they set colors.  This way, it would notify the administrator if they chose foreground and background colors with less contrast than the standards recommend.  For now, we are still at the mercy of the administrator having a good eye for color combinations, or guidance through the hospital brand.",
-			"class": "second-body"
+			"content": "From a design perspective, the biggest challenge was meeting the requirement that administrators be allowed to modify the colors and logo on their screen.  My solution was to limit the number of controls and settings that an administrator could modify, while still providing the necessary flexibility for screen styling.  The more colors we allow to be customized, the higher the possibility for illegible combinations.  I was able to limit the number of colors that can be modified to two - the text color and the background color.  I made use of opacity to establish typographical hierarchy, control and button states."
 		}
 	},{
 		"type": "content",
 		"id": "aventura-14",
 		"attributes": {
 			"content-type": "body",
-			"content": "The final challenge was ensuring that the logo placement and size constraints allowed for the majority of hospital logos to fit in the allowed space.  I was able to decide on size maximums and minimums by evaluating a number of our current customer’s logos.  Paying close attention to spacing around the logo, every logo we tried worked well with the sizing constraints in place.  I made sure to evaluate screens with light and dark background, as well as with jags (white backgrounds) and png files.",
+			"content": "The final challenge was to ensure that the logo placement and size constraints that we applied, still allowed for the majority of hospital logos to fit in the allowed space.  To determine size minimums and maximums, I evaluated a number of our current customer’s logos.  I paid close attention to spacing around the logo, and every logo we tried worked well with the sizing constraints.  I also made sure to evaluate screens using light and dark backgrounds, as well as with JPG (white backgrounds) and PNG (transparent backgrounds) files.",
 			"class": "second-body"
 		}
 	},{
@@ -651,7 +642,7 @@
 		"id": "aventura-17",
 		"attributes": {
 			"content-type": "body",
-			"content": "The small size of the screen is no indicator of its importance to the Aventura product.  As the primary screen visible to users, the improvements were paramount in giving the product a professional and polished face."
+			"content": "The small size of the screen is no indicator of its importance to the Aventura product. As the primary screen visible to users, the improvements were paramount in giving the product a professional and polished face."
 		}
 	}]
 }

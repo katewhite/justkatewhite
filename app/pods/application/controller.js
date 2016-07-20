@@ -6,11 +6,6 @@ export default Ember.Controller.extend({
 	showIndicator: false,
 	currentImageCount: 0,
 	showOverlay: Ember.computed('timeoutComplete', function() {
-		// if (this.get('timeoutComplete')) {
-		// 	this.set('showIndicator', true);
-		// 	$('body').fadeTo(0, 1);
-		// 	return true;
-		// }
 		if (!this.get('timeoutComplete')) {
 			if (!this.get('firstTimeLoad')) {
 				$('body').fadeTo(0, 0);
@@ -34,7 +29,7 @@ export default Ember.Controller.extend({
 
 			// PROJECT CONTENT ANIMATIONS ON SCROLL
 			this.get('sr').reveal('.project-body, .project-header, .project-component', { duration: 1500, viewFactor: 0.3 });
-			this.get('sr').reveal('.project-image', { duration: 1500, viewFactor: 0.05 });
+			this.get('sr').reveal('.project-image, .project-component', { duration: 1500, viewFactor: 0.05 });
 			
 			// HANDLE NAV BAR STATE ON SCROLL
 			$(window).scroll(function(){
