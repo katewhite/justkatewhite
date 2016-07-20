@@ -486,7 +486,9 @@
 		"id": "tapigo-12",
 		"attributes": {
 			"content-type": "image",
-			"content": "/assets/images/tapigo-sketches.jpg"
+			"content": "/assets/images/tapigo-sketches.jpg",
+			"srcset": "/assets/images/tapigo-sketches.jpg 1281w, /assets/images/tapigo-sketches-medium.jpg 1000w, /assets/images/tapigo-sketches-small.jpg 750w",
+			"sizes": "100%"
 		}
 	},{
 		"type": "content",
@@ -500,7 +502,9 @@
 		"id": "tapigo-14",
 		"attributes": {
 			"content-type": "image",
-			"content": "/assets/images/tapigo-createservice.jpg"
+			"content": "/assets/images/tapigo-createservice.jpg",
+			"srcset": "/assets/images/tapigo-createservice.jpg 2040w, /assets/images/tapigo-createservice-medium.jpg 1400w, /assets/images/tapigo-createservice-small.jpg 750w",
+			"sizes": "100%"
 		}
 	},{
 		"type": "content",
