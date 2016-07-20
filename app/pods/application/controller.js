@@ -1,5 +1,6 @@
 export default Ember.Controller.extend({
 	sr: ScrollReveal(),
+	wp: null,
 	timeoutComplete: false,
 	imagesLoaded: false,
 	firstTimeLoad: true,
@@ -27,6 +28,15 @@ export default Ember.Controller.extend({
       			$(this).removeClass('animated fadeInDown');
 			});
 
+			// WAYPOINTS
+			var waypoint = new Waypoint({
+				element: document.getElementById('waypoint'),
+				handler: function(direction) {
+					alert('Scrolled to waypoint!')
+				},
+				offset: '75%'
+			})
+
 			// PROJECT CONTENT ANIMATIONS ON SCROLL
 			this.get('sr').reveal('.project-body, .project-header, .project-component', { duration: 1500, viewFactor: 0.3 });
 			this.get('sr').reveal('.project-image, .project-component', { duration: 1500, viewFactor: 0.05 });
@@ -40,7 +50,7 @@ export default Ember.Controller.extend({
 			        $('.header-container').removeClass('fixed');
 			    }
 			});
-			this.set('showIndicator', false);
+
 			this.set('firstTimeLoad', false);
 			// FADE BODY IN AND OUT ON TRANSITIONS
 			setTimeout(function() { $('body').fadeTo(0, 1) }, 250);
