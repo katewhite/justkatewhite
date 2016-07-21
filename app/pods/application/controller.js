@@ -29,13 +29,51 @@ export default Ember.Controller.extend({
 			});
 
 			// WAYPOINTS
-			var waypoint = new Waypoint({
-				element: document.getElementById('waypoint'),
+			var waypoint1 = new Waypoint({
+				element: $('#waypoint-enigami'),
 				handler: function(direction) {
-					alert('Scrolled to waypoint!')
+					if (direction == "down") {
+						$('html,body').animate({scrollTop: $('#waypoint-enigami').offset().top}, 800);
+					}
 				},
-				offset: '75%'
+				offset: '50%'
 			})
+			var waypoint2 = new Waypoint({
+				element: $('#waypoint-spigot-labs'),
+				handler: function(direction) {
+					if (direction == "down") {
+						$('html,body').animate({scrollTop: $('#waypoint-spigot-labs').offset().top}, 800);
+					}
+				},
+				offset: '50%'
+			})
+			var waypoint3 = new Waypoint({
+				element: $('#waypoint-tapigo'),
+				handler: function(direction) {
+					if (direction == "down") {
+						$('html,body').animate({scrollTop: $('#waypoint-tapigo').offset().top}, 800);
+					}
+				},
+				offset: '50%'
+			})
+			var waypoint4 = new Waypoint({
+				element: $('#waypoint-aventura'),
+				handler: function(direction) {
+					if (direction == "down") {
+						$('html,body').animate({scrollTop: $('#waypoint-aventura').offset().top}, 800);
+					}
+				},
+				offset: '50%'
+			})
+
+			// Example for multiple points
+			/*
+			$('.staffmember').each(function() {
+				$(this).waypoint(function() {
+					$(this).addClass('on');
+				});
+			});
+			*/
 
 			// PROJECT CONTENT ANIMATIONS ON SCROLL
 			this.get('sr').reveal('.project-body, .project-header, .project-component', { duration: 1500, viewFactor: 0.3 });
